@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<meta name="theme-color" content="#ffffff">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(window).scroll( function(){
+        $(".background_text").each( function(i){
+            var textBottom = $(this).position().top + $(this).outerHeight();
+            var windowBottom = $(window).scrollTop() + $(window).height();
+            if( textBottom < windowBottom ){                
+                $(this).animate({'opacity':'1'},3500);
+                }
+    	});
+    });
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101428001-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<title>ACM-SEMO</title>
+</head>
+<body>
+	<nav class="navBar">
+		<img src="images/acm_logo_semo_transparent.png" id="logo" alt="acm semo logo"/>
+		<ul>
+			<li><a href="#bottom" class="navTop">CONTACT</a></li>
+			<li><a href="#third">EVENTS</a></li>
+			<li><a href="#second">ABOUT</a></li>
+			<li><a href="#top">HOME</a></li>
+		</ul>
+	</nav>
+		
+	<div id="top">
+	<!-- Looped video background of cape bridge; Introduction; -->
+		<div id="vid_border">
+			<video id="bg_vid" autoplay loop><source src="images/Bridge.mp4" type="video/mp4"></video>
+		</div>
+	
+		<div>
+			<p id="firstP" class="fillerText">
+			If you're looking for more than just a general education, go on a new adventure with the Association for Computing Machinery at Southeast Missouri State University 
+			where you will be given opportunities to network with fellow programmers, engineers, and computing enthusiasts while diversifying yourself among the various fields 
+			of computing. Our major focus covers concepts in Computer Science, Cybersecurity, and general Computing. We believe in innovation and enjoy changing things up with 
+			a variety of events such as tech talks, skills-based workshops, social meetups, and community outreaches.
+			</p>
+		</div>
+		<div class="parallax bg_img1">
+			<span class="background_text">Venture into the diverse<br />fields of computing...</span>
+		</div>
+	</div>
+	
+	<div id="second">
+		<div>
+			<!-- Talk about ACM SEMO presentations, workshops, and community outreach -->
+			<p class="fillerText">
+                <b>About ACM-SEMO</b><br />
+				ACM-SEMO is the Southeast Missouri State University student chapter of ACM, founded November 2014. 
+				ACM-SEMO has dedicated itself to fostering the growth of interest in computing, and also focuses on providing
+				college students with skills that they may not find inside the classroom. 
+				If you'd like an idea of what sort of events to expect we keep a compiled list of past meetings <a href="events.html" class="acmLink">here</a>
+				<!-- add link to past event list -->
+				<br /> <br /> Our vision for ACM-SEMO is to continue to provide a great atmosphere for learning and collaboration, 
+				and to reach out to the local areas to help create an environment where more people can discover a passion
+				for computing.
+				<br /> <br /> tldr; ACM-SEMO is a group of college students for students and community.
+			</p>
+		</div>
+		<div class="parallax bg_img2">
+			<span class="background_text">{ Learn; Create; Innovate; }</span>
+		</div>
+		<div>
+		<!-- Talk about ACM and add picture of ACM / ACM-W Logo -->
+			<p class="fillerText">
+			<b>About the ACM Organization</b><br />
+            ACM brings together computing educators, researchers, and professionals to inspire dialogue, share resources, 
+            and address the field's challenges. As the world’s largest computing society, ACM strengthens the profession's 
+            collective voice through strong leadership, promotion of the highest standards, and recognition of technical 
+            excellence. ACM supports the professional growth of its members by providing opportunities for life‐long learning, 
+            career development, and professional networking.<br /><br />
+
+            Founded at the dawn of the computer age, ACM’s reach extends to every part of the globe, with more than half of its 
+            100,000 members residing outside the U.S.  Its growing membership has led to Councils in Europe, India, and China, 
+            fostering networking opportunities that strengthen ties within and across countries and technical communities.  
+            Their actions enhance ACM’s ability to raise awareness of computing’s important technical, educational, and social 
+            issues around the world.<br /><br />
+            For more information about ACM follow this <a href="https://www.acm.org/about-acm/about-the-acm-organization" class="acmLink">link</a>
+			</p>
+			<div class="parallax bg_img3"></div>
+		<!-- Talk about ACM-W and what they stand for -->
+			<p class="fillerText">
+            <b>About ACM-W</b><br />
+			ACM-W supports, celebrates, and advocates internationally for the full engagement of women in all aspects of the 
+            computing field, providing a wide range of programs and services to ACM members and working in the larger community 
+            to advance the contributions of technical women.<br /><br />
+
+            For more information about ACM-W follow this <a href="https://women.acm.org/" class="acmLink">link</a>
+			</p>
+		</div>
+	</div>
+	
+	<div id="third">
+		<!-- Picture of dempster; Meeting info; -->
+		<div class="parallax bg_img4">
+			<span class="background_text">Reach new heights...</span>
+		</div>
+		<div>
+		<p style="text-align:center; font-size:xx-large;background-color:black;">Current Events</p>
+		<ul id="eventList">
+			<li>Professional Development Day</li>
+			<li>What is ACM? - Stephen Sladek</li>
+			<li>Git Boot Camp - Michael Ranciglio and Andrew Smith</li>
+			<li>Welcome to Linux - Michael Ranciglio</li>
+			<li>Ai Programming Series</li>
+			<li>Megaminer Trip</li>
+			<li>Supercomputing Symposium</li>
+			<li>GUI Design with GTK - Michael Ranciglio</li>
+			<li>Android App Development - Andrew Smith</li>
+			<li>Web Dev Workshop - Stephen Sladek</li>
+			<li>So You Want to Build a Computer? - Derek Mandl</li>
+			<li>Cyber Defense</li>
+			<li>Invite in a SEMO Grad</li>
+		</ul>
+		<p>All events will be held in Dempster Hall room 24 
+		and will last from 5:30pm - 7:00pm unless otherwise noted</p>
+		</div>
+	</div>
+	
+	<footer id="bottom" class="caboose">
+		<ul>
+			<li>Advisor: Dr. Suhair Amer</li>
+			<li>Chair: Stephen Sladek</li>
+			<li>Vice Chair: Andrew Smith</li>
+			<li>Secretary: Michael Ranciglio</li>
+			<li>Treasurer: Derek Mandl</li>
+		</ul>
+		<ul>
+			<li> ssladek@acm.org - <a href="mailto:ssladek@acm.org?Subject=ACM%20WebMail" target="_top">Send an Email</a></li>
+			<li><a href="http://www.acm.org/">ACM Website</a></li>
+			<li><a href="http://www.facebook.com/semoacm">Facebook</a></li>
+			<li><a href="https://discordapp.com/invite/Bhs2zGp">Discord</a></li>
+			<li><a href="https://orgsync.com/149717/chapter">Orgsync</a></li>
+		</ul>
+	</footer>
+</body>
+
+</html>

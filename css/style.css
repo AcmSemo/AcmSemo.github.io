@@ -1,0 +1,313 @@
+*{
+	font-family:Helvetica;
+	font-size:18px;
+	z-index:0;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	color:white;
+	background-image:url('../images/low_contrast_linen.png');
+}
+
+div{
+	display:block;
+}
+
+p{
+	padding:30px;
+	padding-left:20%;
+	padding-right:20%;
+	text-align:center;
+}
+
+#firstP {
+	margin-top:70px;
+}
+
+#logo {
+	max-height:62px;
+	padding:4px 0 2px 4px;
+	float:left;
+}
+
+#logo:hover{
+	border-radius:100%;
+	background-clip: padding-box;
+	background-origin: content-box;
+	animation-name: logoGlow;
+	animation-duration:1s;
+	animation-iteration-count:2;
+	animation-timing-function:ease-out;
+}
+
+@keyframes logoGlow{
+	0% {
+		/*background-color:none;
+		border:1px solid #00B9E8;*/
+		box-shadow:transparent;
+		}
+	50% {
+		/*background-color:#00B9E8;
+		border:1px solid #00B9E8;*/
+		box-shadow: 0px 0px 30px 25px #00B9E8;
+		}
+	100%{
+		/*background-color:none;
+		border:1px solid #00B9E8;*/
+		box-shadow:transparent;
+		}
+}
+
+.parallax {
+	background-image: url('../images/ctc1.JPG');
+	max-width: 100%;
+	position:relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#vid_border{
+	margin-top:85px;
+	-webkit-clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+	clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+	/*clip-path: polygon(0 20%, 20% 0, 80% 0, 100% 20%, 50% 100%);*/
+	/* clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); */
+}
+
+#bg_vid{
+	max-width: 100%;
+	max-height: 1080px;
+	position:relative;
+	z-index:1;
+	opacity:0.8;
+}
+
+.bg_img1{
+	background-image: url('../images/ctc1.JPG');
+	min-height:380px;
+	opacity:0.8;
+}
+
+.bg_img2{
+	background-image:url('../images/ctc2.JPG');
+	min-height:380px;
+	background-position:50% 25%;
+}
+
+.bg_img3{
+	background-image:url('../images/git2.jpg');
+	min-height:380px;
+}
+
+.bg_img4{
+	background-image:url('../images/DEMPSTER_0003_v3.jpg');
+	min-height:600px;
+	height:600px;
+	background-position:center 70%;
+	margin-bottom:100px;
+}
+
+.bg_img5{
+	background-image:url('../images/soldering.jpg');
+	min-height:600px;
+	height:600px;
+	background-position:60% 80%;
+	margin-bottom:100px;
+}
+
+.background_text{
+	z-index:1;
+	opacity:0;
+}
+
+.bg_img1 span, .bg_img2 span, .bg_img4 span, .bg_img5 span, #bg_vidText{
+	alignment-adjust:middle;
+	display:block;
+	font-size:35px;
+	padding: 160px 18px 0 18px;
+	font-family:Impact;
+}
+
+#bg_vidText{
+	font-size:40px;
+	padding-left:20%;
+	/*color:#00B9E8;*/
+	color:white;
+	opacity:1;
+	position:absolute;
+	z-index:10;
+}
+
+.bg_img1 span{
+	text-align:left;
+	padding-left:20%;
+}
+
+.bg_img2 span{
+	text-align:center;
+	padding-top:200px;
+}
+
+.bg_img4 span, .bg_img5 span{
+	text-align:center;
+	padding-top:150px;
+	letter-spacing:2px;
+	font-size:45px;
+}
+
+.navBar, .caboose{
+	color:#00B9E8;
+	width:100%;
+	z-index:900;
+	display:block;
+}
+
+.navBar{
+	position:fixed;
+	font-size:21px;
+	top:0;
+	height:70px;
+	border-bottom:2px solid black;
+	line-height:5px;
+	background:linear-gradient(#373737,#151515,black);
+}
+
+.caboose{
+	height:140px;
+	bottom:0;
+	background:linear-gradient(black,#151515,#373737);
+	padding: 8px;
+}
+
+.caboose ul{
+	width: 33%;
+	float:left;
+	overflow:hidden;
+}
+
+.acmLink{
+	list-style-type:none;
+	color:#00B9E8;		
+}
+
+.caboose ul li a{
+	color:#00B9E8;
+}
+
+.caboose ul li a:visited{
+	color:white;
+}
+
+.navBar ul {
+	list-style-type:none;
+	padding:0;
+	white-space:nowrap;
+}
+
+.navBar ul li{
+	list-style:none;
+}
+
+.navBar ul li a{
+	float:right;
+	text-align:center;
+	text-decoration:none;
+	display:block;
+	color:#00B9E8;
+	padding:14px 16px;
+}
+
+.navBar ul li a:hover{
+	color:#6CE1FF;
+	line-height:15px;
+	border-bottom:3px solid #6CE1FF;
+}
+
+.navBar ul li a:active{
+	color:white;
+}
+
+#eventList{
+	display:block;
+	width:75%;
+	margin:auto;
+	margin-bottom:2em;
+}
+
+#eventList li{
+	display:block;
+	font-size:x-large;
+	padding:0.2em;
+	text-align:center;
+}
+
+.lucida h1, .lucida ul, .lucida ul li{
+	font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace !important;
+}
+
+.events {
+	display:block;
+	padding:1em;
+	border:0.15em groove black;
+	border-radius:0.5em;
+	margin-top:2em;
+	margin-bottom:2em;
+	background-color:black;
+	/*color:#00B9E8;*/
+	color:lime;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+@media only screen and (max-width: 514px){
+	.navBar{
+	font-size:15px !important;
+	width:auto !important;
+	height:auto !important;
+	opacity:0.95;
+	border-right:3px outset #515151;
+	}
+	.navBar ul li a{
+	width:85px;
+	height:10px;
+	float:left !important;
+	clear:left;
+	padding:10px 0 10px 0 !important;
+	border-bottom:3px outset #515151;
+	}
+	.navBar ul li a:hover{
+	line-height:3px !important;
+	border-top:3px solid #6CE1FF;
+	}
+	.navTop{
+	border-top:3px inset #515151;
+	}
+	#logo{
+	padding-bottom:8px;
+	padding-left:10px;
+	}
+	#bg_vidText{
+	padding-top:0;
+	font-size:35px;
+	}
+	#vid_border{
+		margin-top:0;
+		margin-left:90px;
+	}
+
+}
+
+@media only screen and (min-width: 1400px){
+	.bg_img2{
+	min-height:600px;
+	}
+}
+
+.fillerText{
+	padding-top:50px;
+	padding-bottom:50px;
+}
