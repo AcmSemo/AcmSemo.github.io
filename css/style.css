@@ -265,34 +265,34 @@ p{
 
 @media only screen and (max-width: 514px){
 	.navBar{
-	font-size:15px !important;
-	width:auto !important;
-	height:auto !important;
-	opacity:0.95;
-	border-right:3px outset #515151;
+		font-size:15px !important;
+		width:auto !important;
+		height:auto !important;
+		opacity:0.95;
+		border-right:3px outset #515151;
 	}
 	.navBar ul li a{
-	width:85px;
-	height:10px;
-	float:left !important;
-	clear:left;
-	padding:10px 0 10px 0 !important;
-	border-bottom:3px outset #515151;
+		width:85px;
+		height:10px;
+		float:left !important;
+		clear:left;
+		padding:10px 0 10px 0 !important;
+		border-bottom:3px outset #515151;
 	}
 	.navBar ul li a:hover{
-	line-height:3px !important;
-	border-top:3px solid #6CE1FF;
+		line-height:3px !important;
+		border-top:3px solid #6CE1FF;
 	}
 	.navTop{
-	border-top:3px inset #515151;
+		border-top:3px inset #515151;
 	}
 	#logo{
-	padding-bottom:8px;
-	padding-left:10px;
+		padding-bottom:8px;
+		padding-left:10px;
 	}
 	#bg_vidText{
-	padding-top:0;
-	font-size:35px;
+		padding-top:0;
+		font-size:35px;
 	}
 	#vid_border{
 		margin-top:0;
@@ -303,15 +303,27 @@ p{
 		max-width:100% !important;
 	}
 	.parallax {
-	position:relative;
-	background-attachment: initial !important;
-	background-position: initial !important;
+		position:relative;
+		background-attachment: initial !important;
+		background-position: initial !important;
+	}
+}
+
+@media screen and (orientation:landscape){
+	.bg_img1, .bg_img2, .bg_img3, .bg_img4, .bg_img5{
+		min-height:0 !important;
+		max-width:100% !important;
+	}
+	.parallax {
+		position:relative;
+		background-attachment: initial !important;
+		background-position: initial !important;
 	}
 }
 
 @media only screen and (min-width: 1400px){
 	.bg_img2{
-	min-height:600px;
+		min-height:600px;
 	}
 }
 
