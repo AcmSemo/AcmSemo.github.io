@@ -302,7 +302,11 @@ p{
 		min-height:0 !important;
 		max-width:100% !important;
 	}
-
+	.parallax {
+	position:relative;
+	background-attachment: initial !important;
+	background-position: initial !important;
+	}
 }
 
 @media only screen and (min-width: 1400px){
