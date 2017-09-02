@@ -189,6 +189,10 @@ p{
 	overflow:hidden;
 }
 
+.caboose ul li{
+	background:none;
+}
+
 .acmLink{
 	list-style-type:none;
 	color:#00B9E8;		
@@ -261,6 +265,10 @@ p{
 	color:lime;
 	margin-left:5%;
 	margin-right:5%;
+}
+
+.events ul li:nth-child(even){
+	background:#333333;
 }
 
 @media only screen and (max-width: 514px){
@@ -344,6 +352,6 @@ p{
 	padding-bottom:50px;
 }
 
-li:nth-child(odd) {
+li:nth-child(even) {
 	background: grey;
 }
