@@ -310,7 +310,7 @@ p{
 }
 /*
 @media screen and (orientation:landscape){
-	.bg_img1, .bg_img2, .bg_img3, .bg_img4, .bg_img5{
+	.bg_img1, .bg_img2, .bg_img4, .bg_img5{
 		min-height:0 !important;
 		max-width:100% !important;
 	}
