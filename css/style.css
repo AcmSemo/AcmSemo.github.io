@@ -24,8 +24,10 @@ p{
 
 #firstP {
 	margin-top:70px;
+	margin-bottom:0;
 	text-align:center;
 	padding:15px;
+	padding-bottom:0;
 	color:#00B9E8;
 	font-size:xx-large;
 	font-family:impact;
@@ -277,11 +279,11 @@ p{
 }
 
 @media only screen and (max-width: 514px){
-	*{
-		font-size:1em !important;
-	}
 	.fillerText{
 		text-align:left !important;
+	}
+	.fillerText, p{
+		font-size:1em !important;
 	}
 	.navBar{
 		font-size:15px !important;
