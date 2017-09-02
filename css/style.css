@@ -313,6 +313,12 @@ p{
 		background-attachment: initial !important;
 		background-position: initial !important;
 	}
+	.bg_img4{
+		background-position:center !important;
+	}
+	.bg_img5{
+		background-position:right bottom !important;
+	}
 }
 /*
 @media screen and (orientation:landscape){
@@ -336,4 +342,8 @@ p{
 .fillerText{
 	padding-top:50px;
 	padding-bottom:50px;
+}
+
+li:nth-child(odd) {
+	background: grey;
 }
