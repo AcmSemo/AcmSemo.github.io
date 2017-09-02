@@ -308,7 +308,7 @@ p{
 		background-position: initial !important;
 	}
 }
-
+/*
 @media screen and (orientation:landscape){
 	.bg_img1, .bg_img2, .bg_img3, .bg_img4, .bg_img5{
 		min-height:0 !important;
@@ -320,7 +320,7 @@ p{
 		background-position: initial !important;
 	}
 }
-
+*/
 @media only screen and (min-width: 1400px){
 	.bg_img2{
 		min-height:600px;
