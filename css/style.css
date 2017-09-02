@@ -267,11 +267,14 @@ p{
 	*{
 		font-size:1em !important;
 	}
+	.fillerText{
+		text-align:left !important;
+	}
 	.navBar{
 		font-size:15px !important;
 		width:auto !important;
 		height:auto !important;
-		opacity:0.95;
+		opacity:0.85;
 		border-right:3px outset #515151;
 	}
 	.navBar ul li a{
