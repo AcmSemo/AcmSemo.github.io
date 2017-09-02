@@ -127,7 +127,7 @@ p{
 .bg_img1 span, .bg_img2 span, .bg_img4 span, .bg_img5 span, #bg_vidText{
 	alignment-adjust:middle;
 	display:block;
-	font-size:35px;
+	font-size:35px !important;
 	padding: 160px 18px 0 18px;
 	font-family:Impact;
 }
@@ -264,6 +264,9 @@ p{
 }
 
 @media only screen and (max-width: 514px){
+	*{
+		font-size:1em !important;
+	}
 	.navBar{
 		font-size:15px !important;
 		width:auto !important;
