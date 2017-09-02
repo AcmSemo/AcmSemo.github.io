@@ -282,7 +282,7 @@ p{
 	.fillerText{
 		text-align:left !important;
 	}
-	.fillerText, p{
+	.fillerText, li{
 		font-size:1em !important;
 	}
 	.navBar{
