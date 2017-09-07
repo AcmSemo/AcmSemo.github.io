@@ -275,7 +275,7 @@ p{
 }
 
 .events ul li:nth-child(even){
-	background:#333333;
+	background:#1a1a1a;
 }
 
 @media only screen and (max-width: 514px){
