@@ -361,3 +361,27 @@ p{
 li:nth-child(even) {
 	background: grey;
 }
+
+.resourcesList li{
+	background:none;
+	list-style:none;
+	text-align:center;
+	transition:0.7s;
+}
+
+.resourcesList li:hover{
+	transition:0.7s;
+	background-color:grey;
+}
+
+.resourcesList li a{
+	font-size:1.5rem;
+	color:#00B9E8;
+	text-decoration:none;
+}
+
+.resourcesHeader{
+	font-size:2rem;
+	margin-bottom:0;
+	text-align:center;
+}
