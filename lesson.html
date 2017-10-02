@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/lessonStyles.css">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script>
 		function playScroll(){
 			var audio = document.getElementById("scrollSound");
@@ -24,37 +27,34 @@
 		});
 	});
 	</script>
-	<title>Home</title>
+	<title>Lesson Packet</title>
 </head>
 
 <body>
-	<div id="mainDiv">
+	<div id="mainDiv" class="container">
 		<div>
 			<img src="images/acm_logo_semo_transparent.png" height="160" width="160"/>
 			<h1>Megaminer AI Packet</h1>
 			<hr />
 		</div>
 		<div>
-			<h2>1. Managing Your Code in a Team</h2>
-			<hr />
-			<ul>
+			<a href="#ulOne" data-toggle="collapse"><h2>1. Managing Your Code in a Team</h2></a>
+			<ul id="ulOne" class="collapse">
 				<a href="#"><li class="liTop">Git</li></a>
 				<a href="#"><li>Github</li></a>
 				<a href="#"><li class="liBottom">Other version control options</li></a>
 			</ul>
 		</div>
 		<div>
-			<h2>2. Using the Linux Environment</h2>
-			<hr />
-			<ul>
+			<a href="#ulTwo" data-toggle="collapse"><h2>2. Using the Linux Environment</h2></a>
+			<ul id="ulTwo" class="collapse">
 				<a href="#"><li class="liTop">Installing Ubuntu</li></a>
 				<a href="#"><li class="liBottom">Navigating the Linux Command Line</li></a>
 			</ul>
 		</div>
 		<div>
-			<h2>3. Basic AI Programming Concepts</h2>
-			<hr />
-			<ul>
+			<a href="#ulThree" data-toggle="collapse"><h2>3. Basic AI Programming Concepts</h2></a>
+			<ul id="ulThree" class="collapse">
 				<a href="#"><li class="liTop">Finite State Machines</li></a>
 				<a href="#"><li>Fuzzy Logic</li></a>
 				<a href="#"><li class="liBottom">Path Finding</li></a>
