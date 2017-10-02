@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/lessonStyles.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		function playScroll(){
+			var audio = document.getElementById("scrollSound");
+			audio.play();
+		}
+		function playSelect(){
+			var audio = document.getElementById("selectSound");
+			audio.play();
+		}
+	</script>
+	<script>
+	$(document).ready(function(){
+		$("a li").mouseover(function() {
+			playScroll();
+		});
+		$("a li").mousedown(function(){
+			playSelect();
+		});
+	});
+	</script>
+	<title>Home</title>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div>
+			<img src="images/acm_logo_semo_transparent.png" height="160" width="160"/>
+			<h1>Megaminer AI Packet</h1>
+			<hr />
+		</div>
+		<div>
+			<h2>1. Managing Your Code in a Team</h2>
+			<hr />
+			<ul>
+				<a href="#"><li class="liTop">Git</li></a>
+				<a href="#"><li>Github</li></a>
+				<a href="#"><li class="liBottom">Other version control options</li></a>
+			</ul>
+		</div>
+		<div>
+			<h2>2. Using the Linux Environment</h2>
+			<hr />
+			<ul>
+				<a href="#"><li class="liTop">Installing Ubuntu</li></a>
+				<a href="#"><li class="liBottom">Navigating the Linux Command Line</li></a>
+			</ul>
+		</div>
+		<div>
+			<h2>3. Basic AI Programming Concepts</h2>
+			<hr />
+			<ul>
+				<a href="#"><li class="liTop">Finite State Machines</li></a>
+				<a href="#"><li>Fuzzy Logic</li></a>
+				<a href="#"><li class="liBottom">Path Finding</li></a>
+			</ul>
+		</div>
+		<audio id="scrollSound" src="sounds/scroll.mp3"></audio>
+		<audio id="selectSound" src="sounds/select.mp3"></audio>
+	</div>
+</body>
+</html>
