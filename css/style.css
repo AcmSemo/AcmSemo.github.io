@@ -168,7 +168,6 @@ p{
 
 .navBar, .caboose{
 	color:#00B9E8;
-	width:100%;
 	z-index:900;
 	display:block;
 }
@@ -178,6 +177,7 @@ p{
 	font-size:21px;
 	top:0;
 	height:70px;
+	width:100%;
 	border-bottom:2px solid black;
 	line-height:5px;
 	background:linear-gradient(#373737,#151515,black);
@@ -185,6 +185,7 @@ p{
 
 .caboose{
 	height:140px;
+	max-width:100%;
 	bottom:0;
 	background:linear-gradient(black,#151515,#373737);
 	padding: 8px;
