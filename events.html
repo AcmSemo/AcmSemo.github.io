@@ -4,28 +4,29 @@
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<meta id="viewport" name="viewport" content="width=device-width" />
-	<meta name="theme-color" content="#ffffff">
-	<link href="css/tiltedpage-scroll.css" rel="stylesheet" type="text/css"/>
+	<meta name="theme-color" content="#ffffff" />
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 	<title>ACM-SEMO | Events</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="js/jquery.tiltedpage-scroll.js"></script>
-	<script src="js/jquery.tiltedpage-scroll.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			var $window = $(window);
-			if($window.width() > 1200){
-				$(".main").tiltedpage_scroll({
-					sectionContainer: "> section",
-					angle: 50,                        
-					opacity: true,                    
-					scale: true,                      
-					outAnimation: true
-				});
-			}
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(window).scroll( function(){
+			$(".events").each( function(i){
+				var textBottom = $(this).position().top + $(this).outerHeight();
+				var windowBottom = $(window).scrollTop() + $(window).height();
+				if( textBottom < windowBottom ){
+						$(this).animate({'margin':'2em 5% 2em 5%'}, 400, "swing");
+					}
+			});
 		});
+	});
 	</script>
+	<style>
+		.events{
+			margin:1.5em 0 1.5em 0;
+		}
+	</style>
 </head>
 <body>
 	<nav class="navBar">
@@ -34,13 +35,13 @@
 			<li><a href="index.html">BACK</a></li>
 		</ul>
 	</nav>
-	
+
 	<div>
 		<div>
 			<p style="text-align:center; font-size:xx-large;background-color:black; margin-top:70px;">ACM-SEMO TIMELINE</p>
 			<h1 style="text-align:center; font-size:x-large;">Spring 2018</h1>
 			<ul id="eventList">
-				<li>1/29: Git Boot Camp</li>
+				<li>1/29: Git Essentials</li>
 				<li>Linux Workshop</li>
 				<li>Soldering Workshop</li>
 				<li>Unit Testing</li>
@@ -49,16 +50,16 @@
 				<li>Invite an ACM Speaker ?</li>
 			</ul>
 		</div>
-		
+
 		<!-- Picture of dempster; Meeting info; -->
 		<div class="parallax bg_img5">
-			<span class="background_text">Explore more...</span>
+			<span class="background_text" style="opacity:1;">Explore more...</span>
 		</div>
-		
+
 		<!-- Past Meeting List -->
 		<div class="main">
 			<p style="text-align:center; font-size:xx-large;background-color:black; color:lime;">Past Events</p>
-			
+
 			<section class="page1">
 				<section class="events lucida">
 					<h1 style="text-align:center; font-size:x-large;">Fall 2017</h1>
@@ -78,18 +79,17 @@
 						<li>11/13: Cleaning Up Exploited Environments - Lucas Kossack</li>
 						<li>11/27: Meetup with SEMO Alumni</li>
 						<li>12/2: Hackathon with CS Club</li>
-						<li></li>
 					</ul>
 				</section>
 			</section>
-			
+
 			<section class="page2">
 				<section class="events lucida">
 					<h1 style="text-align:center; font-size:x-large;">Summer 2017</h1>
 					<ul id="eventList">
 						<li>6/6: Stephen Sladek Launches the ACM-SEMO Website<br/>
 							The Pictures Used are by Courtesy of Tatianna Reinbolt and Derek Mandl
-						</li>	
+						</li>
 					</ul>
 				</section>
 			</section>
@@ -180,7 +180,7 @@
 			</section>
 		</div>
 	</div>
-	
+
 	<footer class="caboose">
 		<ul>
 			<li>Advisor: Dr. Suhair Amer</li>
@@ -197,6 +197,7 @@
 			<li><a href="https://selink.semo.edu/organization/acm-semo">SE Link</a></li>
 		</ul>
 	</footer>
+
 </body>
 
 </html>
