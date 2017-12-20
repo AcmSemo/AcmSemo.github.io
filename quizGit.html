@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/lessonStyles.css">
+	<script>
+		function checkAnswers(){
+			var a1 = document.quiz.q1.value;
+			var a2 = document.quiz.q2.value;
+			var a3 = document.quiz.q3.value;
+			var a4 = document.quiz.q4.value;
+			var a5 = document.quiz.q5.value;
+			var a6 = document.quiz.q6.value;
+			var a7 = document.quiz.q7.value;
+			var marks = 0;
+			var total = 7;
+			if(a1 == "b") marks++;
+			if(a2 == "c") marks++;
+			if(a3 == "a") marks++;
+			if(a4 == "d") marks++;
+			if(a5 == "c") marks++;
+			if(a6 == "b") marks++;
+			if(a7 == "a") marks++;
+			alert("You scored " + marks + " / " + total);
+		}
+	</script>
+	<title>ACM-SEMO | Quiz</title>
+</head>
+
+<body>
+	<div id="mainDiv" class="container">
+		<div>
+			<img src="images/acm_logo_semo_transparent.png" height="160" width="160"/>
+			<h1>Git Quiz</h1>
+			<hr />
+			<div>
+				<form name="quiz" style="text-align:left; font-size:large;">
+					1. Which command will update your local repository with changes others have made?<br/>
+					<input type="radio" name="q1" value="a">git push<br/>
+					<input type="radio" name="q1" value="b">git pull<br/>
+					<input type="radio" name="q1" value="c">git clone<br/>
+					<input type="radio" name="q1" value="d">git commit -m<br/><br/>
+
+					2. Which command will create a new copy of a git project on your local repository?<br/>
+					<input type="radio" name="q2" value="a">git push<br/>
+					<input type="radio" name="q2" value="b">git pull<br/>
+					<input type="radio" name="q2" value="c">git clone<br/>
+					<input type="radio" name="q2" value="d">git commit -m<br/><br/>
+
+					3. Which command will update the git repository with changes you have made?<br/>
+					<input type="radio" name="q3" value="a">git push<br/>
+					<input type="radio" name="q3" value="b">git pull<br/>
+					<input type="radio" name="q3" value="c">git clone<br/>
+					<input type="radio" name="q3" value="d">git commit -m<br/><br/>
+
+					4. Which command will check for merge conflicts and let you write a message about your changes?<br/>
+					<input type="radio" name="q4" value="a">git push<br/>
+					<input type="radio" name="q4" value="b">git pull<br/>
+					<input type="radio" name="q4" value="c">git clone<br/>
+					<input type="radio" name="q4" value="d">git commit -m<br/><br/>
+
+					5. Which command will let you add all of your files to the commit?<br/>
+					<input type="radio" name="q5" value="a">git add /all<br/>
+					<input type="radio" name="q5" value="b">git add *<br/>
+					<input type="radio" name="q5" value="c">git add --all<br/>
+					<input type="radio" name="q5" value="d">git append *<br/><br/>
+
+					6. Github is a command line tool used for version control<br/>
+					<input type="radio" name="q6" value="a">True<br/>
+					<input type="radio" name="q6" value="b">False<br/><br/>
+
+					7. Git is a command line tool used for version control<br/>
+					<input type="radio" name="q7" value="a">True<br/>
+					<input type="radio" name="q7" value="b">False<br/><br/>
+
+					<input type="button" value="submit" onclick="checkAnswers()" style="color:black;" />
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
