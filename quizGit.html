@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/lessonStyles.css">
 	<script>
 		function checkAnswers(){
@@ -15,16 +14,25 @@
 			var a5 = document.quiz.q5.value;
 			var a6 = document.quiz.q6.value;
 			var a7 = document.quiz.q7.value;
+			var a8 = document.quiz.q8.value;
+			var a9 = document.quiz.q9.value;
+			var a10 = document.quiz.q10.value;
 			var marks = 0;
-			var total = 7;
+			var total = 9;
 			if(a1 == "b") marks++;
 			if(a2 == "c") marks++;
 			if(a3 == "a") marks++;
 			if(a4 == "d") marks++;
-			if(a5 == "c") marks++;
+			if(a5 == "b" || a5 == "c") marks++;
 			if(a6 == "b") marks++;
 			if(a7 == "a") marks++;
-			alert("You scored " + marks + " / " + total);
+			if(a8 == "c") marks++;
+			if(a9 == "b") marks++;
+			if(a10 == "c") marks++;
+			var message = " you may want to try again.";
+			if(marks >= total) message = " perfect!";
+			else if (marks >= 7) message = " you passed!";
+			alert("You scored " + marks + " / " + total + message);
 		}
 	</script>
 	<title>ACM-SEMO | Quiz</title>
@@ -68,13 +76,31 @@
 					<input type="radio" name="q5" value="c">git add --all<br/>
 					<input type="radio" name="q5" value="d">git append *<br/><br/>
 
-					6. Github is a command line tool used for version control<br/>
-					<input type="radio" name="q6" value="a">True<br/>
-					<input type="radio" name="q6" value="b">False<br/><br/>
+					6. Which is a command line tool used for version control?<br/>
+					<input type="radio" name="q6" value="a">Github<br/>
+					<input type="radio" name="q6" value="b">Git<br/><br/>
 
-					7. Git is a command line tool used for version control<br/>
-					<input type="radio" name="q7" value="a">True<br/>
-					<input type="radio" name="q7" value="b">False<br/><br/>
+					7. Which is a graphical user interface for version control?<br/>
+					<input type="radio" name="q7" value="a">Github<br/>
+					<input type="radio" name="q7" value="b">Git<br/><br/>
+
+					8. Which command will let you view merge conflicts?<br/>
+					<input type="radio" name="q8" value="a">git gud<br/>
+					<input type="radio" name="q8" value="b">git merge<br/>
+					<input type="radio" name="q8" value="c">git diff<br/>
+					<input type="radio" name="q8" value="d">git out<br/><br/>
+
+					9. Which command can be used to set aside your changes?<br/>
+					<input type="radio" name="q9" value="a">git checkin --filename<br/>
+					<input type="radio" name="q9" value="b">git checkout --filename<br/>
+					<input type="radio" name="q9" value="c">git status --filename<br/>
+					<input type="radio" name="q9" value="d">git out --filename<br/><br/>
+
+					10. (bonus) Which Github plugin command can be used for emergency commits incase of fire?<br/>
+					<input type="radio" name="q10" value="a">git gud<br/>
+					<input type="radio" name="q10" value="b">git out<br/>
+					<input type="radio" name="q10" value="c">git fire<br/>
+					<input type="radio" name="q10" value="d">git /!<br/><br/>
 
 					<input type="button" value="submit" onclick="checkAnswers()" style="color:black;" />
 				</form>
