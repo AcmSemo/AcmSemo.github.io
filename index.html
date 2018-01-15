@@ -14,7 +14,7 @@
 			$(".background_text").each( function(i){
 				var textBottom = $(this).position().top + $(this).outerHeight();
 				var windowBottom = $(window).scrollTop() + $(window).height();
-				if( textBottom < windowBottom ){                
+				if( textBottom < windowBottom ){
 					$(this).animate({'opacity':'1'},3500);
 					}
 			});
@@ -43,20 +43,20 @@
 			<li><a href="#top">HOME</a></li>
 		</ul>
 	</nav>
-		
+
 	<div id="top">
 	<!-- Looped video background of cape bridge; Introduction; -->
 		<div id="vid_border">
 			<video id="bg_vid" autoplay loop><source src="images/Bridge.mp4" type="video/mp4"></video>
 		</div>
-	
+
 		<div>
 			<p id="firstP">Welcome to ACM-SEMO</p>
 			<hr style="max-width:60%;" />
 			<p class="fillerText" style="padding-top:0;">
-			If you're looking for more than just a general education, go on a new adventure with the Association for Computing Machinery at Southeast Missouri State University 
-			where you will be given opportunities to network with fellow programmers, engineers, and computing enthusiasts while diversifying yourself among the various fields 
-			of computing. Our major focus covers concepts in Computer Science, Cybersecurity, and general Computing. We believe in innovation and enjoy changing things up with 
+			If you're looking for more than just a general education, go on a new adventure with the Association for Computing Machinery at Southeast Missouri State University
+			where you will be given opportunities to network with fellow programmers, engineers, and computing enthusiasts while diversifying yourself among the various fields
+			of computing. Our major focus covers concepts in Computer Science, Cybersecurity, and general Computing. We believe in innovation and enjoy changing things up with
 			a variety of events such as tech talks, skills-based workshops, social meetups, and community outreaches.
 			</p>
 		</div>
@@ -64,18 +64,18 @@
 			<span class="background_text">Venture into the diverse<br />fields of computing...</span>
 		</div>
 	</div>
-	
+
 	<div id="second">
 		<div>
 			<!-- Talk about ACM SEMO presentations, workshops, and community outreach -->
-			<h3 style="text-align:center; padding:15px;">About ACM-SEMO</h3><hr />
-			<p class="fillerText">
-				<abbr title="Association for Computing Machinery at Southeast Missouri State University">ACM-SEMO</abbr> is the Southeast Missouri State University student chapter of <abbr title="Association for Computing Machinery">ACM</abbr>, founded November 2014. 
+			<h3 style="text-align:center; padding:15px; color:#00B9E8;">About ACM-SEMO</h3><hr />
+			<p class="fillerText" style="color:#00B9E8;">
+				<abbr title="Association for Computing Machinery at Southeast Missouri State University">ACM-SEMO</abbr> is the Southeast Missouri State University student chapter of <abbr title="Association for Computing Machinery">ACM</abbr>, founded November 2014.
 				<abbr title="Association for Computing Machinery at Southeast Missouri State University">ACM-SEMO</abbr> has dedicated itself to fostering the growth of interest in computing, and also focuses on providing
-				college students with skills that they may not find inside the classroom. 
+				college students with skills that they may not find inside the classroom.
 				If you'd like an idea of what sort of events to expect we keep a compiled list of past meetings <a href="events.html" class="acmLink">here</a>
 				<!-- link to past event list -->
-				<br /> <br /> Our vision for <abbr title="Association for Computing Machinery at Southeast Missouri State University">ACM-SEMO</abbr> is to continue to provide a great atmosphere for learning and collaboration, 
+				<br /> <br /> Our vision for <abbr title="Association for Computing Machinery at Southeast Missouri State University">ACM-SEMO</abbr> is to continue to provide a great atmosphere for learning and collaboration,
 				and to reach out to the local areas to help create an environment where more people can discover a passion
 				for computing.
 				<br /> <br /> tldr; <abbr title="Association for Computing Machinery at Southeast Missouri State University">ACM-SEMO</abbr> is a group of college students for students and community.
@@ -86,29 +86,42 @@
 		</div>
 		<div>
 		<!-- Talk about ACM and add picture of ACM / ACM-W Logo -->
-			<h3 style="text-align:center; padding:15px;">About the ACM Organization</h3><hr />
-			<p class="fillerText">
-				<abbr title="Association for Computing Machinery">ACM</abbr> brings together computing educators, researchers, and professionals to inspire dialogue, share resources, 
-			    and address the field's challenges. As the world’s largest computing society, <abbr title="Association for Computing Machinery">ACM</abbr> strengthens the profession's 
-			    collective voice through strong leadership, promotion of the highest standards, and recognition of technical 
-				excellence. <abbr title="Association for Computing Machinery">ACM</abbr> supports the professional growth of its members by providing opportunities for life‐long learning, 
+			<h3 style="text-align:center; padding:15px; color:white;">About the ACM Organization</h3><hr />
+			<p class="fillerText" style="color:white;">
+				<abbr title="Association for Computing Machinery">ACM</abbr> brings together computing educators, researchers, and professionals to inspire dialogue, share resources,
+			    and address the field's challenges. As the world’s largest computing society, <abbr title="Association for Computing Machinery">ACM</abbr> strengthens the profession's
+			    collective voice through strong leadership, promotion of the highest standards, and recognition of technical
+				excellence. <abbr title="Association for Computing Machinery">ACM</abbr> supports the professional growth of its members by providing opportunities for life‐long learning,
 			    career development, and professional networking.<br /><br />
 
-			    Founded at the dawn of the computer age, <abbr title="Association for Computing Machinery">ACM</abbr>’s reach extends to every part of the globe, with more than half of its 
-			    100,000 members residing outside the U.S.  Its growing membership has led to Councils in Europe, India, and China, 
-			    fostering networking opportunities that strengthen ties within and across countries and technical communities.  
-			    Their actions enhance <abbr title="Association for Computing Machinery">ACM</abbr>’s ability to raise awareness of computing’s important technical, educational, and social 
+			    Founded at the dawn of the computer age, <abbr title="Association for Computing Machinery">ACM</abbr>’s reach extends to every part of the globe, with more than half of its
+			    100,000 members residing outside the U.S.  Its growing membership has led to Councils in Europe, India, and China,
+			    fostering networking opportunities that strengthen ties within and across countries and technical communities.
+			    Their actions enhance <abbr title="Association for Computing Machinery">ACM</abbr>’s ability to raise awareness of computing’s important technical, educational, and social
 			    issues around the world.<br /><br />
 			    For more information about <abbr title="Association for Computing Machinery">ACM</abbr> follow this <a href="https://www.acm.org/about-acm/about-the-acm-organization" class="acmLink">link</a>
 			</p>
-			<div class="parallax bg_img3"></div>
+			<div class="parallax bg_img3">
+				<span class="background_text">Take a leading role...</span>
+			</div>
 		<!-- Talk about ACM-W and what they stand for -->
-			<h3 style="text-align:center; padding:15px;">About ACM-W</h3><hr />
-			<p class="fillerText">
-				<abbr title="Association for Computing Machinery Women">ACM-W</abbr> supports, celebrates, and advocates internationally for the full engagement of women in all aspects of the 
-			    computing field, providing a wide range of programs and services to <abbr title="Association for Computing Machinery">ACM</abbr> members and working in the larger community 
+			<h3 style="text-align:center; padding:15px; color:pink;">About ACM-W</h3><hr />
+			<p class="fillerText" style="color:pink;">
+				<abbr title="Association for Computing Machinery Women">ACM-W</abbr> supports, celebrates, and advocates internationally for the full engagement of women in all aspects of the
+			    computing field, providing a wide range of programs and services to <abbr title="Association for Computing Machinery">ACM</abbr> members and working in the larger community
 			    to advance the contributions of technical women.<br /><br />
 			    For more information about <abbr title="Association for Computing Machinery Women">ACM-W</abbr> follow this <a href="https://women.acm.org/" class="acmLink">link</a>
+			</p>
+			<!-- Talk about SIGAI -->
+			<div class="parallax bg_img6">
+				<span class="background_text">~$ sudo apt-get network</span>
+			</div>
+			<h3 style="text-align:center; padding:15px; color:lime;">About SIGAI</h3><hr />
+			<p class="fillerText" style="color:lime;">
+				The <abbr title="Special Interest Group for Artificial Intelligence">SIGAI</abbr> chapter at <abbr title="Southeast Missouri State University">SEMO</abbr>
+				developed in fall of 2017 as a response to the pressing interest students had in game development,
+				and artificial intelligence. This is a special interest group of <abbr title="Association for Computing Machinery">ACM</abbr>, for those who are interested in learning
+				more ai programming, and is more project focused. Meetings are generally on Tuesdays at 4:00pm in Dempster Lab 23.
 			</p>
 			<h3 style="text-align:center; padding:15px;">Resources</h3><hr />
 			<p>
@@ -117,7 +130,7 @@
 			</p>
 		</div>
 	</div>
-	
+
 	<div id="third">
 		<!-- Picture of dempster; Meeting info; -->
 		<div class="parallax bg_img4">
@@ -128,11 +141,11 @@
 		<ul id="eventList">
 			<li>January 29 - Git Boot Camp</li>
 		</ul>
-		<p>All events will be held in Dempster Hall room 24 
+		<p>All events will be held in Dempster Hall room 24
 		and will last from 6:30pm - 8:00pm unless otherwise noted</p>
 		</div>
 	</div>
-	
+
 	<footer id="bottom" class="caboose">
 		<ul>
 			<li>Advisor: Dr. Suhair Amer</li>

@@ -93,20 +93,19 @@ p{
 }
 
 .bg_img2{
-	background-image:url('../images/ctc2.JPG');
+	background-image:url('../images/supercomputing.JPG');
 	min-height:380px;
-	background-position:50% 25%;
+	background-position:30% 80%;
 }
 
 .bg_img3{
-	background-image:url('../images/git2.jpg');
+	background-image:url('../images/git1.png');
 	min-height:380px;
 }
 
 .bg_img4{
-	background-image:url('../images/DEMPSTER_0003_v3.jpg');
+	background-image:url('../images/DEMPSTER_0003.png');
 	min-height:600px;
-	height:600px;
 	background-position:center 70%;
 	margin-bottom:100px;
 }
@@ -114,9 +113,14 @@ p{
 .bg_img5{
 	background-image:url('../images/soldering.jpg');
 	min-height:600px;
-	height:600px;
 	background-position:60% 80%;
 	margin-bottom:100px;
+}
+
+.bg_img6{
+	background-image:url('../images/sigai.jpg');
+	min-height:500px;
+	background-position:50% 50%;
 }
 
 .background_text{
@@ -124,7 +128,8 @@ p{
 	opacity:0;
 }
 
-.bg_img1 span, .bg_img2 span, .bg_img4 span, .bg_img5 span, #bg_vidText{
+.bg_img1 span, .bg_img2 span, .bg_img3 span,
+.bg_img4 span, .bg_img5 span, .bg_img6 span, #bg_vidText{
 	alignment-adjust:middle;
 	display:block;
 	font-size:35px !important;
@@ -141,12 +146,12 @@ p{
 	z-index:10;
 }
 
-.bg_img1 span{
+.bg_img1 span, .bg_img3 span{
 	text-align:left;
 	padding-left:20%;
 }
 
-.bg_img2 span{
+.bg_img2 span, .bg_img6 span{
 	text-align:center;
 	padding-top:200px;
 }
