@@ -151,7 +151,7 @@ p{
 	padding-left:20%;
 }
 
-.bg_img2 span, .bg_img6 span{
+.bg_img2 span{
 	text-align:center;
 	padding-top:200px;
 }
@@ -161,6 +161,11 @@ p{
 	padding-top:150px;
 	letter-spacing:2px;
 	font-size:45px;
+}
+
+.bg_img6 span{
+	text-align:left;
+	padding-top:0px;
 }
 
 .navBar, .caboose{
