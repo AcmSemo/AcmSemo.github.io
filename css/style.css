@@ -96,11 +96,13 @@ p{
 	background-image:url('../images/supercomputing.JPG');
 	min-height:380px;
 	background-position:30% 80%;
+	opacity:0.75;
 }
 
 .bg_img3{
 	background-image:url('../images/git1.png');
 	min-height:380px;
+	opacity:0.85;
 }
 
 .bg_img4{
@@ -154,6 +156,7 @@ p{
 .bg_img2 span{
 	text-align:center;
 	padding-top:200px;
+	opacity:0.8;
 }
 
 .bg_img4 span, .bg_img5 span{
@@ -277,7 +280,7 @@ p{
 .events ul li:nth-child(even){
 	background:#1a1a1a;
 }
-
+/* When screen width is <= 514px */
 @media only screen and (max-width: 514px){
 	.fillerText{
 		text-align:left !important;
@@ -327,11 +330,19 @@ p{
 		background-attachment: initial !important;
 		background-position: initial !important;
 	}
-	.bg_img4{
+	.bg_img4, .bg_img6{
 		background-position:center !important;
 	}
 	.bg_img5{
 		background-position:right bottom !important;
+	}
+	.bg_img6{
+		max-width:100% !important;
+		min-height:100px;
+	}
+	.bg_img6 span{
+		font-size:0px !important;
+		opacity:0;
 	}
 }
 /*
@@ -347,6 +358,7 @@ p{
 	}
 }
 */
+/* When screen width is >= 1400px */
 @media only screen and (min-width: 1400px){
 	.bg_img2{
 		min-height:600px;
