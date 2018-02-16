@@ -197,7 +197,7 @@ p{
 }
 
 .caboose ul{
-	width: 33%;
+	max-width: 33%;
 	float:left;
 	overflow:hidden;
 }
