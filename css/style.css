@@ -248,14 +248,14 @@ p{
 	color:white;
 }
 
-#eventList{
+.eventList{
 	display:block;
 	width:75%;
 	margin:auto;
 	margin-bottom:2em;
 }
 
-#eventList li{
+.eventList li{
 	display:block;
 	font-size:x-large;
 	padding:0.2em;
