@@ -13,11 +13,13 @@
 	$(document).ready(function(){
 		$(window).scroll( function(){
 			$(".events").each( function(i){
-				var textBottom = $(this).position().top + $(this).outerHeight();
-				var windowBottom = $(window).scrollTop() + $(window).height();
-				if( textBottom < windowBottom ){
+				if(parseInt($(this).css("marginLeft")) < "5"){
+					var textBottom = $(this).position().top + $(this).outerHeight();
+					var windowBottom = $(window).scrollTop() + $(window).height();
+					if( textBottom < windowBottom ){
 						$(this).animate({'margin':'2em 5% 2em 5%'}, 400, "swing");
 					}
+				}
 			});
 		});
 	});

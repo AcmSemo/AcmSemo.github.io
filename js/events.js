@@ -117,10 +117,15 @@ function getSemester(id){
 		return fall17;
 	} else if(id === "event9") {
 		return spring18;
+	} else if(id === "event10") {
+		return fall18;
+	} else if(id === "event11") {
+		return spring19;
+	} else if(id === "event12") {
+		return fall19;
 	}
-	//else if(id === "event10") return fall18;
 	else {
-		return "no info";
+		return "-";
 	}
 }
 
