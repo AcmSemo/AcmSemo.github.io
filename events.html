@@ -23,7 +23,7 @@
 	});
 	</script>
 	<script src="js/scripts.js" type="text/javascript"></script>
-	<script src="js/events.js" type="text.javascript"></script>
+	<script src="js/events.js" type="text/javascript"></script>
 	<style>
 		.events{
 			margin:1.5em 0 1.5em 0;
@@ -32,6 +32,7 @@
 </head>
 
 <body>
+
 	<nav class="navBar">
 		<img src="images/acm_logo_semo_transparent.png" id="logo" alt="acm semo logo" onclick="logoClick()"/>
 		<ul>
@@ -65,78 +66,82 @@
 			
 			<section class="events lucida">
 				<h1 style="text-align:center; font-size:x-large;">Spring 2018</h1>
-				<ul class="eventList" id="event9"></ul>
+				<ul class="eventList" id="event9">
+					<script>loadEvent('event9')</script>
+				</ul>
 			</section>
 
 			<section class="events lucida">
 				<h1 style="text-align:center; font-size:x-large;">Fall 2017</h1>
-				<ul class="eventList" id="event8"></ul>
+				<ul class="eventList" id="event8">
+					<script>loadEvent('event8')</script>
+				</ul>
 			</section>
 
 			<section class="events lucida">
 				<h1 style="text-align:center; font-size:x-large;">Summer 2017</h1>
-				<ul class="eventList" id="event7"></ul>
+				<ul class="eventList" id="event7">
+					<script>loadEvent('event7')</script>
+				</ul>
 			</section>
 
 			<section class="events lucida">
 				<h1 style="text-align:center; font-size:x-large;">Spring 2017</h1>
-				<ul class="eventList" id="event6"></ul>
+				<ul class="eventList" id="event6">
+					<script>loadEvent('event6')</script>
+				</ul>
 			</section>
 
 			<section class="events lucida">
 				<h1 style="text-align:center; font-size:x-large;">Fall 2016</h1>
-				<ul class="eventList" id="event5"></ul>
+				<ul class="eventList" id="event5">
+					<script>loadEvent('event5')</script>
+				</ul>
 			</section>
 
 			<section class="events lucida">
 				<h1 style="text-align:center; font-size:x-large;">Summer 2016</h1>
-				<ul class="eventList" id="event4"></ul>
+				<ul class="eventList" id="event4">
+					<script>loadEvent('event4')</script>
+				</ul>
 			</section>
 
 			<section class="events lucida">
 				<h1 style="text-align:center; font-size:x-large;">Spring 2016</h1>
-				<ul class="eventList" id="event3"></ul>
+				<ul class="eventList" id="event3">
+					<script>loadEvent('event3')</script>
+				</ul>
 			</section>
 
 			<section class="events lucida">
 				<h1 style="text-align:center; font-size:x-large;">Fall 2015</h1>
-				<ul class="eventList" id="event2"></ul>
+				<ul class="eventList" id="event2">
+					<script>loadEvent('event2')</script>
+				</ul>
 			</section>
 
 			<section class="events lucida">
 				<h1 style="text-align:center; font-size:x-large;">Spring 2015</h1>
-				<ul class="eventList" id="event1"></ul>
+				<ul class="eventList" id="event1">
+					<script>loadEvent('event1')</script>
+				</ul>
 			</section>
 
 			<section class="events lucida">
 				<h1 style="text-align:center; font-size:x-large;">Fall 2014</h1>
-				<ul class="eventList" id="event0"></ul>
+				<ul class="eventList" id="event0">
+					<script>loadEvent('event0')</script>
+				</ul>
 			</section>
-
+			
 		</div>
 	</div>
 
 	<footer id="bottom" class="caboose">
-		<ul>
-			<li>Advisor: Dr. Suhair Amer</li>
-			<li>Chair: Stephen Sladek</li>
-			<li>Vice Chair: Kearsten Collins</li>
-			<li>Secretary: Nicholas Hoang</li>
-			<li>Treasurer: Derek Mandl</li>
-		</ul>
-		<ul>
-			<li> ssladek@acm.org - <a href="mailto:ssladek@acm.org?Subject=ACM%20WebMail" target="_top">Send an Email</a></li>
-			<li><a href="http://www.acm.org/">ACM Website</a></li>
-			<li><a href="http://www.facebook.com/ACMSEMO">Facebook</a></li>
-			<li><a href="https://discordapp.com/invite/Bhs2zGp">Discord</a></li>
-			<li><a href="https://semo.campuslabs.com/engage/organization/acm-semo">SELink</a></li>
-		</ul>
-		<ul>
-			<li><a href="http://www.semo.edu/csdept/organizations/acm">CS Dept: ACM</a></li>
-			<li><a href="#">CS Dept: SIGAI</a></li>
-		</ul>
+		<ul id="footerNames"><script>loadFooter('footerNames')</script></ul>
+		<ul id="footerLinks1"><script>loadFooter('footerLinks1')</script></ul>
+		<ul id="footerLinks2"><script>loadFooter('footerLinks2')</script></ul>
 	</footer>
 
 </body>
-
 </html>
