@@ -1,3 +1,15 @@
+var spring18ai = [
+"2/13: Bresenham's Line Algorithm for Line of Sight",
+"2/20: Linux",
+"2/27: Ncurses Game Development",
+"3/6: Inheritance",
+"3/20: Inheritance Design Patterns p1",
+"3/27: Inheritance Design Patterns p2",
+"4/3: Pathfinding with A*",
+"4/10 APIs",
+"4/17 Entity Component Systems"
+];
+
 var spring18 = [
 "1/24: ACM-SEMO is launched on Moodle by Dr. Suhair Amer",
 "1/29: Git Boot Camp - Michael Ranciglio",
@@ -9,7 +21,9 @@ var spring18 = [
 "3/19: Signal Processing - Ethan Reker",
 "3/26: Programming in Python - Andrew Smith",
 "4/2: Machine Learning - Faizel Khan",
+"4/7: Megaminer Preparation Workshop in DH026",
 "4/14 - 15: MegaMinerAI 21 at Missouri S&T",
+"4/23 - Front End Development",
 "4/30: Virtual Reality - Stephen Sladek"
 ];
 
@@ -120,4 +134,36 @@ function loadEvent(id){
 	}
 }
 
-var current = spring18;
+function loadCurrent(){
+	var current = spring18;
+	var eventList = document.getElementById("currentEvents");
+	var d = new Date();
+	var month = d.getMonth()+1;
+	var day = d.getDate();
+	var li;
+	for(var i = 0; i < current.length; i++){
+		var event = (current[i]).split("/", 1);
+		if(event[0] >= month) {
+			li = document.createElement("li");
+			li.appendChild(document.createTextNode(current[i]));
+			eventList.appendChild(li);
+		}
+	}
+}
+
+function loadAICurrent(){
+	var currentAI = spring18ai;
+	var eventList = document.getElementById("currentAIEvents");
+	var d = new Date();
+	var month = d.getMonth()+1;
+	var day = d.getDate();
+	var li;
+	for(var i = 0; i < currentAI.length; i++){
+		var event = (currentAI[i]).split("/", 1);
+		if(event[0] >= month) {
+			li = document.createElement("li");
+			li.appendChild(document.createTextNode(currentAI[i]));
+			eventList.appendChild(li);
+		}
+	}
+}
