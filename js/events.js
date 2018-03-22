@@ -22,8 +22,9 @@ var spring18 = [
 "3/26: Programming in Python - Andrew Smith",
 "4/2: Machine Learning - Faizel Khan",
 "4/7: Megaminer Preparation Workshop in DH026",
+"4/9: Programming in Rust - Mark Eikel",
 "4/14 - 15: MegaMinerAI 21 at Missouri S&T",
-"4/23 - Front End Development",
+"4/23 - Front End Development - Stephen Sladek",
 "4/30: Virtual Reality - Stephen Sladek"
 ];
 
