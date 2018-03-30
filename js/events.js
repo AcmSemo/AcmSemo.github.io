@@ -1,13 +1,10 @@
 var spring18ai = [
-"2/13: Bresenham's Line Algorithm for Line of Sight",
-"2/20: Linux",
-"2/27: Ncurses Game Development",
-"3/6: Inheritance",
-"3/20: Inheritance Design Patterns p1",
-"3/27: Inheritance Design Patterns p2",
+"2/13: Bresenham's Line Algorithm for Line of Sight - Aaron Gunther",
+"2/20: Linux - Michael Ranciglio",
+"2/27: Ncurses Game Development - Michael Ranciglio",
 "4/3: Pathfinding with A*",
-"4/10 APIs",
-"4/17 Entity Component Systems"
+"4/10: APIs",
+"4/17: Entity Component Systems"
 ];
 
 var spring18 = [
@@ -24,7 +21,7 @@ var spring18 = [
 "4/7: Megaminer Preparation Workshop in DH026",
 "4/9: Programming in Rust - Mark Eikel",
 "4/14 - 15: MegaMinerAI 21 at Missouri S&T",
-"4/23 - Front End Development - Stephen Sladek",
+"4/23: Front End Development - Stephen Sladek",
 "4/30: Virtual Reality - Stephen Sladek"
 ];
 
@@ -88,14 +85,14 @@ var summer16 = [
 
 var spring16 = [ "ACM-SEMO goes on hiatus" ];
 
-var fall15 = [ "9/--: Acm Recruitment Presentation - Cameron Hutchison" ];
+var fall15 = [ "10/28: Acm Recruitment Presentation - Cameron Hutchison" ];
 
 var spring15 = [
-"3/--: ACM Recruitment Presentation - Zachary Higgins",
-"4/--: Towers of Hanoi & Eight Queens - Zachary Higgins"
+"2/18: ACM Recruitment Presentation - Zachary Higgins",
+"5/5: Towers of Hanoi & Eight Queens - Zachary Higgins"
 ];
  
-var fall14 = [ "11/--: Founding of ACM-SEMO" ];
+var fall14 = [ "12/9: Founding of ACM-SEMO" ];
 
 function getSemester(id){
 	if(id === "event0") {
