@@ -1,7 +1,6 @@
 var spring18ai = [
 "2/13: Bresenham's Line Algorithm for Line of Sight - Aaron Gunther",
-"2/20: Linux - Michael Ranciglio",
-"4/17: Entity Component Systems"
+"2/20: Linux - Michael Ranciglio"
 ];
 
 var spring18 = [
