@@ -118,6 +118,22 @@
 					"host":"Stephen Sladek",
 					"org":"acm"
 			}
+		],
+		"8":[
+			{
+				"day":18,
+				"event":"Student Involvement Fair",
+				"host":"SEMO",
+				"org":"acm"
+			}
+		],
+		"9":[
+			{
+				"day":24,
+				"event":"Professional Development Day",
+				"host":"Brooksource",
+				"org":"acm"
+			}
 		]
 	},
 	"2017" : {

@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" prefix="og:http://ogp.me/ns#">
 
 <head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<meta id="viewport" name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="Assiocation for Computing Machinery at Southeast Missouri State University">
+	<meta id="viewport" name="viewport" content="width=device-width">
 	<meta name="theme-color" content="#ffffff">
-	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<meta property="og:title" content="ACM-SEMO" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://acmsemo.github.io/index.html" />
+	<meta property="og:image" content="https://acmsemo.github.io/images/acm_logo_semo_transparent.png" />
+	
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+	</script>
 	<script type="text/javascript">
-	$(document).ready(function(){
-		$(window).scroll( function(){
-			$(".background_text").each( function(i){
-				var textBottom = $(this).position().top + $(this).outerHeight();
-				var windowBottom = $(window).scrollTop() + $(window).height();
-				if( textBottom < windowBottom ){
-					$(this).animate({'opacity':'1'},3500);
+		$(document).ready(function(){
+			$(window).scroll( function(){
+				$(".background_text").each( function(i){
+					var textBottom = $(this).position().top + $(this).outerHeight();
+					var windowBottom = $(window).scrollTop() + $(window).height();
+					if( textBottom < windowBottom ){
+						$(this).animate({'opacity':'1'},3500);
 					}
+				});
 			});
 		});
-	});
 	</script>
 	<script src="js/scripts.js" type="text/javascript"></script>
 	<script src="js/events.js" type="text/javascript"></script>
+	<!--
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,10 +41,11 @@
 
 	  ga('create', 'UA-101428001-1', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
+	-->
 	<title>ACM-SEMO</title>
 </head>
+
 <body>
 	<nav class="navBar">
 		<img src="images/acm_logo_semo_transparent.png" id="logo" alt="acm semo logo" onclick="logoClick()"/>
@@ -71,7 +82,7 @@
 		<div>
 			<!-- Talk about ACM SEMO presentations, workshops, and community outreach -->
 			<h3 style="text-align:center; padding:15px; color:#00B9E8;">About ACM-SEMO</h3><hr />
-			<p class="fillerText" style="color:#00B9E8;">
+			<p class="fillerText">
 				<abbr title="Association for Computing Machinery at Southeast Missouri State University">ACM-SEMO</abbr> is the Southeast Missouri State University student chapter of <abbr title="Association for Computing Machinery">ACM</abbr>, founded November 2014.
 				<abbr title="Association for Computing Machinery at Southeast Missouri State University">ACM-SEMO</abbr> has dedicated itself to fostering the growth of interest in computing, and also focuses on providing
 				college students with skills that they may not find inside the classroom.
@@ -108,7 +119,7 @@
 			</div>
 		<!-- Talk about ACM-W and what they stand for -->
 			<h3 style="text-align:center; padding:15px; color:pink;">About ACM-W</h3><hr />
-			<p class="fillerText" style="color:pink;">
+			<p class="fillerText">
 				<abbr title="Association for Computing Machinery Women">ACM-W</abbr> supports, celebrates, and advocates internationally for the full engagement of women in all aspects of the
 			    computing field, providing a wide range of programs and services to <abbr title="Association for Computing Machinery">ACM</abbr> members and working in the larger community
 			    to advance the contributions of technical women.<br /><br />
@@ -119,7 +130,7 @@
 				<span class="background_text">~$ sudo apt-get network<br/>~$ _</span>
 			</div>
 			<h3 style="text-align:center; padding:15px; color:lime;">About SIGAI</h3><hr />
-			<p class="fillerText" style="color:lime;">
+			<p class="fillerText">
 				The <abbr title="Special Interest Group for Artificial Intelligence">SIGAI</abbr> chapter at <abbr title="Southeast Missouri State University">SEMO</abbr>
 				developed in fall of 2017 as a response to the pressing interest students had in game development,
 				and artificial intelligence. This is a special interest group of <abbr title="Association for Computing Machinery">ACM</abbr>, for those who are interested in learning
