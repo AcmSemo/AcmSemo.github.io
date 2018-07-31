@@ -125,9 +125,27 @@
 				"event":"Student Involvement Fair",
 				"host":"SEMO",
 				"org":"acm"
+			},
+			{
+				"day":27,
+				"event":"General Meeting",
+				"host":"Stephen Sladek",
+				"org":"acm"
+			},
+			{
+				"day":29,
+				"event":"Welcome Back Party",
+				"host":"SEMO",
+				"org":"acm"
 			}
 		],
 		"9":[
+			{
+				"day":3,
+				"event":"Git Boot Camp",
+				"host":"TBA",
+				"org":"acm"
+			},
 			{
 				"day":24,
 				"event":"Professional Development Day",

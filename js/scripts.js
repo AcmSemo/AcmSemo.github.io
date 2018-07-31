@@ -36,35 +36,41 @@ var link2 = [
 "http://www.semo.edu/csdept/organizations/acm_sig_ai.html"
 ];
 
-function loadFooter(id){
-	var section = document.getElementById(id);
-	var items, links;
-	var needsLinks = false;
-	if(id === "footerNames"){
-		items = names;
-	} else if (id === "footerLinks1") {
-		items = link1Names;
-		links = link1;
-		needsLinks = true;
-	} else {
-		items = link2Names;
-		links = link2;
-		needsLinks = true;
-	}
-	if(needsLinks){
-		for(var i = 0; i < items.length; i++){
-			var li = document.createElement("li");
-			var a = document.createElement("a");
-			a.textContent = items[i];
-			a.setAttribute("href", links[i]);
-			li.appendChild(a);
-			section.appendChild(li);
+function loadFooter(){
+	const ids = ["footerNames","footerLinks1","footerLinks2"];
+	for(let i = 0; i < ids.length; i++){
+		var section = document.getElementById("bottom");
+		var items, links;
+		var needsLinks = false;
+		if(ids[i] === "footerNames"){
+			items = names;
+			needsLinks = false;
+		} else if (ids[i] === "footerLinks1") {
+			items = link1Names;
+			links = link1;
+			needsLinks = true;
+		} else {
+			items = link2Names;
+			links = link2;
+			needsLinks = true;
 		}
-	} else {
-		for(var i = 0; i < items.length; i++){
-			var li = document.createElement("li");
-			li.appendChild(document.createTextNode(items[i]));
-			section.appendChild(li);
+		var ul = document.createElement("ul");
+		if(needsLinks){
+			for(let i = 0; i < items.length; i++){
+				var li = document.createElement("li");
+				var a = document.createElement("a");
+				a.textContent = items[i];
+				a.setAttribute("href", links[i]);
+				li.appendChild(a);
+				ul.appendChild(li);
+			}
+		} else {
+			for(let i = 0; i < items.length; i++){
+				var li = document.createElement("li");
+				li.appendChild(document.createTextNode(items[i]));
+				ul.appendChild(li);
+			}
 		}
+		section.appendChild(ul);
 	}
 }

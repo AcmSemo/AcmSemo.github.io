@@ -1,3 +1,11 @@
+var fall18 = [
+"8/18: Student Involvement Fair",
+"8/27: General Meeting",
+"8/29: Welcome Back Party",
+"9/3: Git Boot Camp",
+"9/24: Professional Development Day"
+];
+
 var spring18ai = [
 "2/13: Bresenham's Line Algorithm for Line of Sight - Aaron Gunther",
 "2/20: Linux - Michael Ranciglio"
@@ -134,7 +142,7 @@ function loadEvent(id){
 }
 
 function loadCurrent(){
-	var current = spring18;
+	var current = fall18;
 	var eventList = document.getElementById("currentEvents");
 	var d = new Date();
 	var month = d.getMonth()+1;
@@ -152,6 +160,7 @@ function loadCurrent(){
 
 function loadAICurrent(){
 	var currentAI = spring18ai;
+	//var currentAI = fall18ai;
 	var eventList = document.getElementById("currentAIEvents");
 	var d = new Date();
 	var month = d.getMonth()+1;
