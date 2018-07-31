@@ -2,36 +2,22 @@
 <html lang="en-US" prefix="og:http://ogp.me/ns#">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="description" content="Assiocation for Computing Machinery at Southeast Missouri State University">
-	<meta id="viewport" name="viewport" content="width=device-width">
-	<meta name="theme-color" content="#ffffff">
-	<meta property="og:title" content="ACM-SEMO" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://acmsemo.github.io/index.html" />
-	<meta property="og:image" content="https://acmsemo.github.io/images/acm_logo_semo_transparent.png" />
-
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous">
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$(window).scroll( function(){
-				$(".background_text").each( function(i){
-					var textBottom = $(this).position().top + $(this).outerHeight();
-					var windowBottom = $(window).scrollTop() + $(window).height();
-					if( textBottom < windowBottom ){
-						$(this).animate({'opacity':'1'},3500);
-					}
-				});
+	<meta charset="utf-8">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+	<script src="js/scripts.js" type="text/javascript">
+	$(document).ready(function(){
+		$(window).scroll( function(){
+			$(".background_text").each( function(i){
+				var textBottom = $(this).position().top + $(this).outerHeight();
+				var windowBottom = $(window).scrollTop() + $(window).height();
+				if( textBottom < windowBottom ){
+					$(this).animate({'opacity':'1'},3500);
+				}
 			});
 		});
+	});
 	</script>
-	<script src="js/scripts.js" type="text/javascript"></script>
-	<script src="js/events.js" type="text/javascript"></script>
+	<script>loadHead()</script>
 	<title>ACM-SEMO</title>
 </head>
 
@@ -75,7 +61,7 @@
 				<abbr title="Association for Computing Machinery at Southeast Missouri State University">ACM-SEMO</abbr> is the Southeast Missouri State University student chapter of <abbr title="Association for Computing Machinery">ACM</abbr>, founded November 2014.
 				<abbr title="Association for Computing Machinery at Southeast Missouri State University">ACM-SEMO</abbr> has dedicated itself to fostering the growth of interest in computing, and also focuses on providing
 				college students with skills that they may not find inside the classroom.
-				If you'd like an idea of what sort of events to expect we keep a compiled list of past meetings <a href="events.html" class="acmLink" style="color:white;">here</a>
+				If you'd like an idea of what sort of events to expect we keep a compiled list of past meetings <a href="events.html" class="acmLink">here</a>
 				<!-- link to past event list -->
 				<br /> <br /> Our vision for <abbr title="Association for Computing Machinery at Southeast Missouri State University">ACM-SEMO</abbr> is to continue to provide a great atmosphere for learning and collaboration,
 				and to reach out to the local areas to help create an environment where more people can discover a passion

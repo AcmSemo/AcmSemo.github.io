@@ -2,7 +2,34 @@ function logoClick(){
 	location.assign("https://acmsemo.github.io/index.html");
 }
 
-var names = [
+/* BEGIN HEAD SECTION */
+
+const headTags = [
+	'<meta http-equiv="Content-Type" content="text/html;charset="utf-8">',
+	'<meta name="description" content="Association for Computing Machinery at Southeast Missouri State University">',
+	'<meta name="keywords" content="Student,Organization,University,Computer,Events,SEMO,Technology">',
+	'<meta id="viewport" name="viewport" content="width=device-width">',
+	'<meta name="theme-color" content="#000000">',
+	'<link href="css/style.css" rel="stylesheet" type="text/css">',
+	'<link href="css/style.css" rel="stylesheet" type="text/css">',
+	'<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">',
+	'<script src="js/events.js" type="text/javascript"></script>',
+	'<meta property="og:title" content="ACM-SEMO" />',
+	'<meta property="og:type" content="website" />',
+	'<meta property="og:url" content="https://acmsemo.github.io/index.html" />',
+	'<meta property="og:image" content="https://acmsemo.github.io/images/acm_logo_semo_transparent.png" />'
+];
+
+function loadHead(){
+	for(let i = 0; i < headTags.length; i++){
+		$('head').append(headTags[i]);
+	}
+}
+
+/* END HEAD SECTION */
+/* BEGIN FOOTER SECTION */
+
+const names = [
 "Advisor: Dr. Suhair Amer",
 "Chair: Stephen Sladek",
 "Vice Chair: Kearsten Collins",
@@ -10,14 +37,14 @@ var names = [
 "Treasurer: Derek Mandl"
 ];
 
-var link1Names = [
+const link1Names = [
 "ACM Website",
 "Facebook",
 "Discord Chat",
 "SELink"
 ];
 
-var link1= [
+const link1= [
 "http://www.acm.org/",
 "http://www.facebook.com/ACMSEMO",
 "https://discordapp.com/invite/Bhs2zGp",
@@ -74,3 +101,5 @@ function loadFooter(){
 		section.appendChild(ul);
 	}
 }
+
+/* END FOOTER SECTION */
