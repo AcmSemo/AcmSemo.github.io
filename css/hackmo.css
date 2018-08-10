@@ -1,0 +1,132 @@
+body{
+	background-color: #737373;
+	font-family:helvetica;
+}
+header {
+	text-align: center;
+	color: #000000;
+	font-family: helvetica;
+}
+header h2{
+	font-size: 2em;
+	font-weight: 1000;
+	vertical-align: text-top;
+	margin-top:-1em;
+	margin-bottom: 1em;
+}
+#hackmoLogo{
+	font-size: 6em;
+	transition: 0.5s;
+	font-weight: 1000;
+}
+#hackmoLogo:hover #lb{
+	padding-right: 1em;
+}
+#hackmoLogo:hover #rb{
+	padding-left: 1em;
+}
+	#hackmoLogo:hover #hack{
+		text-shadow:none;
+		display:none;
+	}
+	#mo:before{
+		content: '';
+		text-shadow:none;
+		color:red;
+	}
+	#hackmoLogo:hover #mo::before{
+		animation: glitch 4s linear infinite;
+	}
+		@keyframes glitch{
+			0% { content: 'Hack'; }
+			35% { content: 'Hack'; }
+			37% { color:red; }
+			40% { content: '192.'; color:lime; }
+			43% { color:red; }
+			45% { content: 'Hack'; }
+			47% { color:red; }
+			50% { content: 'OR\'1\'='; color:lime; }
+			53% { color:red; }
+			55% { content: 'Hack'; }
+			57% { color:red; }
+			60% { content: 'sudo'; color:lime; }
+			63% { color:red; }
+			65% { content: 'Hack'; }
+			67% { color:red; }
+			70% { content: '/root:'; color:lime; }
+			73% { color:red; }
+			75% { content: 'Hack'; }
+			100% { content: 'Hack'; }
+		}
+	#hack{
+		color: #AA0000;
+		text-shadow: 1px 4px 6px red;
+	}
+	#lb, #rb{
+		transition: 0.5s;
+	}
+	#lb{
+		text-shadow: 4px 4px 6px black;
+		padding-right:0px;
+	}
+	#rb{
+		text-shadow: -4px 4px 6px black;
+		padding-left:0px;
+	}
+	#mo{
+		text-shadow: 1px 4px 6px black;
+	}
+	.container{
+		font-size:large;
+		max-width:1000px;
+		margin: 2em 0;
+		position:absolute;
+		left:50%;
+		transform: translateX(-50%);
+		background-color: #0D0D0D;
+		color: #FFFFFF;
+		line-height: 1.5em;
+		padding: 1em 5%;
+		border-radius: 1em;
+		box-shadow: -0.5em 1em 0.5em #000000;
+	}
+	nav{
+		color: #FFFFFF;
+		text-align:center;
+		font-weight:bold;
+		font-size: 1.2em;
+	}
+	a, a:visited{
+		color: #FFFFFF;
+		text-decoration: none;
+		transition:0.5s;
+	}
+	a:hover{
+		font-size:1.1em;
+	}
+	@media only screen and (max-width: 640px){
+		#hackmoLogo{
+			font-size: 2.5em !important;
+		}
+		header h2{
+			font-size: 1em !important;
+		}
+		container{
+			font-size: medium !important;
+		}
+		.container{
+			margin: 2em 1% !important;
+		}
+	}
+	.glow{
+		color: #AA0000;
+		text-shadow: 2px 2px 5px #AA0000;
+	}
+	.glitch1{
+		margin-left:-2em;
+		color: lime;
+	}
+	.glitch2{
+		margin-right:-2em;
+		color: blue;
+	}

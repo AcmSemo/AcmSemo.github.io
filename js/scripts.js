@@ -5,15 +5,11 @@ function logoClick(){
 /* BEGIN HEAD SECTION */
 
 const headTags = [
-	'<meta http-equiv="Content-Type" content="text/html;charset="utf-8">',
 	'<meta name="description" content="Association for Computing Machinery at Southeast Missouri State University">',
 	'<meta name="keywords" content="Student,Organization,University,Computer,Events,SEMO,Technology">',
-	'<meta id="viewport" name="viewport" content="width=device-width">',
 	'<meta name="theme-color" content="#000000">',
 	'<link href="css/style.css" rel="stylesheet" type="text/css">',
-	'<link href="css/style.css" rel="stylesheet" type="text/css">',
 	'<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">',
-	'<script src="js/events.js" type="text/javascript"></script>',
 	'<meta property="og:title" content="ACM-SEMO" />',
 	'<meta property="og:type" content="website" />',
 	'<meta property="og:url" content="https://acmsemo.github.io/index.html" />',
