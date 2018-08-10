@@ -6,5 +6,3 @@ It provides the following:
 * Listings of current and past events
 * Links to external affiliated sites such as SELink and Facebook
 * Downloadable presentation slides
-
-The rendered website can be viewed here: https://acmsemo.github.io/.
