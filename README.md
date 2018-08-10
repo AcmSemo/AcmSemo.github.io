@@ -6,3 +6,5 @@ It provides the following:
 * Listings of current and past events
 * Links to external affiliated sites such as SELink and Facebook
 * Downloadable presentation slides
+* Registration for HackMO event
+* ACM Email Signature Generator
