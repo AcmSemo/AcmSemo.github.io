@@ -104,6 +104,14 @@ header h2{
 	a:hover{
 		font-size:1.1em;
 	}
+	h3{
+		text-align: center;
+	}
+	ul{
+		list-style:none;
+		text-align:center;
+		padding-left:0;
+	}
 	@media only screen and (max-width: 640px){
 		#hackmoLogo{
 			font-size: 2.5em !important;
@@ -113,7 +121,7 @@ header h2{
 		}
 		.container{
 			font-size: medium !important;
-			max-width:96% !important;
+			width: 80% !important;
 		}
 	}
 	.glow{
