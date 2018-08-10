@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<meta name="keywords" content="Student,Organization,University,Computer,Science,Fair,Events,SEMO,Technology,Hackathon,Hack,Missouri,MO">
+		<meta id="viewport" name="viewport" content="width=device-width">
+		<meta name="theme-color" content="#000000">
+		<meta http-equiv='cache-control' content='no-cache'>
+		<style>
+			body{
+				background-color: #737373;
+				font-family:helvetica;
+			}
+			header {
+				text-align: center;
+				color: #000000;
+				font-family: helvetica;
+			}
+			header h2{
+				font-size: 2em;
+				font-weight: 1000;
+				vertical-align: text-top;
+				margin-top:-1em;
+				margin-bottom: 1em;
+			}
+			#hackmoLogo{
+				font-size: 6em;
+				transition: 0.5s;
+				font-weight: 1000;
+			}
+			#hackmoLogo:hover #lb{
+				padding-right: 1em;
+			}
+			#hackmoLogo:hover #rb{
+				padding-left: 1em;
+			}
+				#hackmoLogo:hover #hack{
+					text-shadow:none;
+					display:none;
+				}
+				#mo:before{
+					content: '';
+					text-shadow:none;
+					color:red;
+				}
+				#hackmoLogo:hover #mo::before{
+					animation: glitch 4s linear infinite;
+				}
+					@keyframes glitch{
+						0% { content: 'Hack'; }
+						35% { content: 'Hack'; }
+						37% { color:red; }
+						40% { content: '192.'; color:lime; }
+						43% { color:red; }
+						45% { content: 'Hack'; }
+						47% { color:red; }
+						50% { content: 'OR\'1\'='; color:lime; }
+						53% { color:red; }
+						55% { content: 'Hack'; }
+						57% { color:red; }
+						60% { content: 'sudo'; color:lime; }
+						63% { color:red; }
+						65% { content: 'Hack'; }
+						67% { color:red; }
+						70% { content: '/root:'; color:lime; }
+						73% { color:red; }
+						75% { content: 'Hack'; }
+						100% { content: 'Hack'; }
+					}
+				#hack{
+					color: #AA0000;
+					text-shadow: 1px 4px 6px red;
+				}
+				#lb, #rb{
+					transition: 0.5s;
+				}
+				#lb{
+					text-shadow: 4px 4px 6px black;
+					padding-right:0px;
+				}
+				#rb{
+					text-shadow: -4px 4px 6px black;
+					padding-left:0px;
+				}
+				#mo{
+					text-shadow: 1px 4px 6px black;
+				}
+				.container{
+					font-size:large;
+					margin: 2em 5%;
+					background-color: #0D0D0D;
+					color: #FFFFFF;
+					line-height: 1.5em;
+					padding: 1em 5%;
+					border-radius: 1em;
+					box-shadow: -0.5em 1em 0.5em #000000;
+				}
+				nav{
+					color: #FFFFFF;
+					text-align:center;
+					font-weight:bold;
+					font-size: 1.2em;
+				}
+				a, a:visited{
+					color: #FFFFFF;
+					text-decoration: none;
+					transition:0.5s;
+				}
+				a:hover{
+					font-size:1.1em;
+				}
+				@media only screen and (max-width: 640px){
+					#hackmoLogo{
+						font-size: 2.5em !important;
+					}
+					header h2{
+						font-size: 1em !important;
+					}
+					container{
+						font-size: medium !important;
+					}
+					.container{
+						margin: 2em 1% !important;
+					}
+				}
+				.glow{
+					color: #AA0000;
+					text-shadow: 2px 2px 5px #AA0000;
+				}
+				.glitch1{
+					margin-left:-2em;
+					color: lime;
+				}
+				.glitch2{
+					margin-right:-2em;
+					color: blue;
+				}
+		</style>
+		<script type="text/javascript">
+			function addClick(){
+				var links = document.getElementsByTagName("a");
+				links[1].addEventListener("click", function(){
+					document.getElementById('about').classList.add("glow");
+					setTimeout(function(){
+						document.getElementById('about').classList.remove("glow");
+						document.getElementById('about').classList.add("glitch1");
+					}, 1500);
+					setTimeout(function(){
+						document.getElementById('about').classList.remove("glitch1");
+						document.getElementById('about').classList.add("glitch2");
+					}, 1600);
+					setTimeout(function(){
+						document.getElementById('about').classList.remove("glitch2");
+					}, 1700);
+				});
+				
+				links[2].addEventListener("click", function(){
+					document.getElementById('schedule').classList.add("glow");
+					setTimeout(function(){
+						document.getElementById('schedule').classList.remove("glow");
+						document.getElementById('schedule').classList.add("glitch1");
+					}, 1500);
+					setTimeout(function(){
+						document.getElementById('schedule').classList.remove("glitch1");
+						document.getElementById('schedule').classList.add("glitch2");
+					}, 1600);
+					setTimeout(function(){
+						document.getElementById('schedule').classList.remove("glitch2");
+					}, 1700);
+				});
+				
+				links[3].addEventListener("click", function(){
+					document.getElementById('sponsors').classList.add("glow");
+					setTimeout(function(){
+						document.getElementById('sponsors').classList.remove("glow");
+						document.getElementById('sponsors').classList.add("glitch1");
+					}, 1500);
+					setTimeout(function(){
+						document.getElementById('sponsors').classList.remove("glitch1");
+						document.getElementById('sponsors').classList.add("glitch2");
+					}, 1600);
+					setTimeout(function(){
+						document.getElementById('sponsors').classList.remove("glitch2");
+					}, 1700);
+				});
+			}
+		</script>
+	</head>
+	<body onload="addClick()">
+		<header id="top">
+			<h1 id="hackmoLogo">
+				<span id="lb">{</span> 
+				<span id="hack">Hack</span><span id="mo">MO</span> 
+				<span id="rb">}</span>
+			</h1>
+			<h2>Computer Science Fair</h2>
+		</header>
+		<nav>
+			<a href="https://acmsemo.github.io/index.html">Home</a> |
+			<a href="#about">About</a> |
+			<a href="#schedule">Schedule</a> |
+			<a href="#sponsors">Sponsors</a>
+		</nav>
+		<section class="container">
+			<h3 id="about" style="text-align:center;">About HackMO</h3>
+			<p>
+				Magnis dis parturient montes nascetur ridiculus mus. Maecenas volutpat blandit aliquam etiam erat velit scelerisque. 
+				Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Fermentum iaculis eu non diam phasellus. 
+				Ut diam quam nulla porttitor massa id. Odio pellentesque diam volutpat commodo sed egestas. Feugiat nibh sed pulvinar proin. 
+				Purus faucibus ornare suspendisse sed nisi lacus sed viverra. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. 
+				Malesuada fames ac turpis egestas integer. Cursus metus aliquam eleifend mi in nulla.
+			</p>
+			<h3 id="schedule" style="text-align:center;">Schedule</h3>
+			<section style="text-align:center;">
+				<p>
+					<hr/>
+					August 30<br/>
+					Registration opens
+				</p>
+				<p>
+					<hr/>
+					Oct 4<br/>
+					Registration closes
+				</p>
+				<p>
+					<hr/>
+					Oct 6<br/>
+					Dempster Hall Lab xxx<br/>
+					HackMO opens 10:00 am<br/>
+					Judging begins 11:00 am<br/>
+					HackMO closes 6:00 pm
+					<hr/>
+				</p>
+			</section>
+			<h3 id="sponsors" style="text-align:center;">Our Sponsors</h3>
+			<ul style="list-style:none; text-align:center;">
+				<li>SEMO Computer Science Department</li>
+				<li>Brooksource</li>
+				<li>Association for Computing Machinery</li>
+			</ul>
+			<p style="text-align:center; margin-top:3em;">
+				<a href="#top">Return to top</a>
+			</p>
+		</section>
+		<script type="text/javascript">addClick();</script>
+	</body>
+</html>
