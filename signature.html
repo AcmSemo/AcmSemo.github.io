@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ACM-SEMO | Signature</title>
+	<style>
+		body{
+			font-family:helvetica;
+			font-weight:bold;
+			background-color: #4D4D4D;
+		}
+		hr{
+			margin:2em 0;
+		}
+		tr td{
+			padding-bottom:1em;
+		}
+		.container{
+			padding:5em;
+			background-color: #FFFFFF;
+			border-radius:0.5em;
+			position:absolute;
+			left:50%;
+			transform:translateX(-50%);
+		}
+	</style>
+	<script>
+		function updateForm(){
+			var nameText = document.getElementById('name').value;
+			var titleText = document.getElementById('title').value;
+			var emailText = document.getElementById('email').value;
+			document.getElementById('nameField').innerHTML = nameText;
+			document.getElementById('titleField').innerHTML = titleText;
+			document.getElementById('emailField').innerHTML = emailText;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<table>
+				<tr>
+					<td><label for="name">Name: </label></td>
+					<td><input type="text" id="name"></input></td>
+				</tr>
+				<tr>
+					<td><label for="title">Title: </label></td>
+					<td><input type="text" id="title"></input></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email: </label></td>
+					<td><input type="text" id="email"></input></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center;"><input style="width:100%; padding:0.5em;" type="button" value="Update" onclick="updateForm()"></td>
+				</tr>
+			</table>
+		</form>
+		<hr/>
+		<div id="result">
+			<img src="images/acm_logo.png" height="64" /><br/>
+			<span style="color: #00B9E8; font-weight: 1000; font-size:1.2em; font-family: impact;">/</span>
+			<span id="nameField">Name</span><br/>
+			<span style="font-size:1em; font-weight:normal;">
+				<span id="titleField">Title</span>
+				<br/>Association for Computing Machinery<br/>
+				<span style="font-size:0.8em; font-weight:normal;" id="emailField">name@email.com</span>
+			</span>
+		</div>
+	</div>
+</body>
+</html>
