@@ -111,11 +111,9 @@ header h2{
 		header h2{
 			font-size: 1em !important;
 		}
-		container{
-			font-size: medium !important;
-		}
 		.container{
-			margin: 2em 1% !important;
+			font-size: medium !important;
+			max-width:96% !important;
 		}
 	}
 	.glow{
