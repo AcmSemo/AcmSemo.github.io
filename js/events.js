@@ -12,7 +12,8 @@ const fall18 = [
     "8/27: General Meeting",
     "8/29: Welcome Back Party",
     "9/3: Git Boot Camp",
-    "9/24: Professional Development Day"
+    "9/24: Professional Development Day",
+	"10/6: HackMO"
 ];
 
 const summer18 = [

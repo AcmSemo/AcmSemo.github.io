@@ -143,13 +143,21 @@
 			{
 				"day":3,
 				"event":"Git Boot Camp",
-				"host":"TBA",
+				"host":"Michael Ranciglio",
 				"org":"acm"
 			},
 			{
 				"day":24,
 				"event":"Professional Development Day",
 				"host":"Brooksource",
+				"org":"acm"
+			}
+		],
+		"10":[
+			{
+				"day":6,
+				"event":"HackMO",
+				"host":"CS Dept & Brooksource",
 				"org":"acm"
 			}
 		]
