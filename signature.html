@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ACM-SEMO | Signature</title>
 	<style>
 		body{
@@ -16,12 +17,13 @@
 			padding-bottom:1em;
 		}
 		.container{
-			padding:5em;
+			padding:4em;
 			background-color: #FFFFFF;
 			border-radius:0.5em;
 			position:absolute;
 			left:50%;
 			transform:translateX(-50%);
+			min-width:270px;
 		}
 	</style>
 	<script>
@@ -30,8 +32,8 @@
 			var titleText = document.getElementById('title').value;
 			var emailText = document.getElementById('email').value;
 			document.getElementById('nameField').innerHTML = nameText;
-			document.getElementById('titleField').innerHTML = titleText;
-			document.getElementById('emailField').innerHTML = emailText;
+			document.getElementById('titleField').innerHTML = "Chapter " + titleText;
+			document.getElementById('emailField').innerHTML = emailText + "@semo.edu";
 		}
 	</script>
 </head>
@@ -45,11 +47,22 @@
 				</tr>
 				<tr>
 					<td><label for="title">Title: </label></td>
-					<td><input type="text" id="title"></td>
+					<td>
+						<select id="title">
+							<option value="President">President</option>
+							<option value="Vice President">Vice President</option>
+							<option value="Secretary">Secretary</option>
+							<option value="Treasurer">Treasurer</option>
+							<option value="Web Developer">Web Developer</option>
+						</select>
+					</td>
 				</tr>
 				<tr>
 					<td><label for="email">Email: </label></td>
-					<td><input type="text" id="email"></td>
+					<td>
+						<input type="text" id="email" style="width:50%;">
+						<span style="font-weight:normal; font-size:small;">@semo.edu</span>
+					</td>
 				</tr>
 				<tr>
 					<td colspan="2" style="text-align:center;"><input style="width:100%; padding:0.5em;" type="button" value="Update" onclick="updateForm()"></td>
@@ -64,7 +77,7 @@
 			<span style="font-size:1em; font-weight:normal;">
 				<span id="titleField">Title</span>
 				<br/>Association for Computing Machinery<br/>
-				<span style="font-size:0.9em; font-weight:normal;" id="emailField">name@email.com</span>
+				<span style="font-size:0.9em; font-weight:normal;" id="emailField">name@semo.edu</span>
 			</span>
 		</div>
 	</div>
