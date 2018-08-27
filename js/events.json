@@ -141,7 +141,7 @@
 		],
 		"9":[
 			{
-				"day":3,
+				"day":10,
 				"event":"Git Boot Camp",
 				"host":"Michael Ranciglio",
 				"org":"acm"
@@ -157,7 +157,7 @@
 			{
 				"day":6,
 				"event":"HackMO",
-				"host":"CS Dept & Brooksource",
+				"host":"CS Dept",
 				"org":"acm"
 			}
 		]
