@@ -1,4 +1,4 @@
-/* Use find and replace for /r/n and tabs to minimize size. Save minimized version to events-min.json. */
+/* Use find and replace for /r/n and /t to minimize size. Save minimized version to events-min.json. */
 {
 	"2018" : {
 		"1":[
@@ -147,6 +147,12 @@
 				"org":"acm"
 			},
 			{
+				"day":17,
+				"event":"Mic on Mic",
+				"host":"Michael Ranciglio",
+				"org":"acm"
+			},
+			{
 				"day":24,
 				"event":"Professional Development Day",
 				"host":"Brooksource",
@@ -154,6 +160,12 @@
 			}
 		],
 		"10":[
+			{
+				"day":1,
+				"event":"Vue.js",
+				"host":"Ethan Reker",
+				"org":"acm"
+			},
 			{
 				"day":6,
 				"event":"HackMO",
