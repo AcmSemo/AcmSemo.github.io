@@ -1,0 +1,39 @@
+:root {
+	--icon-size: 64px;
+}
+.icon {
+	display: inline-block;
+	filter: opacity(80%);
+	width: var(--icon-size);
+	height: var(--icon-size);
+}
+.acmsemo {
+	content: url("svg/acmsemo.svg");
+}
+
+.semo {
+	content: url('svg/semo.svg');
+}
+.acm {
+	content: url('svg/acm.svg');
+	filter: grayscale(100%);
+}
+
+.acmsemo:before, .semo:before, .acm:before {
+	display:inline-block;
+	width: var(--icon-size);
+	height: var(--icon-size);
+	background-size: var(--icon-size) var(--icon-size);
+}
+
+.acmsemo:before {
+	background-image: url("svg/acmsemo.svg");
+}
+
+.semo:before {
+	background-image: url("svg/semo.svg");
+}
+
+.acm:before {
+	background-image: url("svg/acm.svg");
+}
