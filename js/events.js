@@ -15,7 +15,8 @@ const fall18 = [
 	"9/17: Mic on Mic",
     "9/24: Professional Development Day",
 	"10/1: Vue.js",
-	"10/6: HackMO"
+	"10/20: HackMO",
+	"11/10-11: MegaMinerAI 22"
 ];
 
 const summer18 = [

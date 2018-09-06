@@ -167,10 +167,18 @@
 				"org":"acm"
 			},
 			{
-				"day":6,
+				"day":20,
 				"event":"HackMO",
 				"host":"CS Dept",
 				"org":"acm"
+			}
+		],
+		"11":[
+			{
+				"day":10,
+				"event":"MegaMinerAI 22",
+				"host":"Missouri S&T",
+				"org":"siggame"
 			}
 		]
 	},
