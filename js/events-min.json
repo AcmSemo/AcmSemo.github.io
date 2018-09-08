@@ -1,1 +1,16 @@
-{"2018" : {"9":[{"day":10,"event":"Git Boot Camp","host":"Michael Ranciglio","org":"acm"},{"day":17,"event":"Mic on Mic","host":"Michael Ranciglio","org":"acm"},{"day":24,"event":"Professional Development Day","host":"Brooksource","org":"acm"}],"10":[{"day":1,"event":"Vue.js","host":"Ethan Reker","org":"acm"},{"day":20,"event":"HackMO","host":"CS Dept","org":"acm"}],"11":[{"day":10,"event":"MegaMinerAI 22","host":"Missouri S&T","org":"siggame"}]},}}
+{
+	"2018" : {
+		"9":[
+			{"day":10,"event":"Git Boot Camp","host":"Michael Ranciglio","org":"acm"},
+			{"day":17,"event":"Mic on Mic","host":"Michael Ranciglio","org":"acm"},
+			{"day":24,"event":"Professional Development Day","host":"Brooksource","org":"acm"}
+		],
+		"10":[
+			{"day":1,"event":"Vue.js","host":"Ethan Reker","org":"acm"},
+			{"day":20,"event":"HackMO","host":"CS Dept","org":"acm"}
+		],
+		"11":[
+			{"day":10,"event":"MegaMinerAI 22","host":"Missouri S&T","org":"siggame"}
+		]
+	}
+}
