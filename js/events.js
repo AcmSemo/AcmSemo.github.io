@@ -8,32 +8,30 @@ For regular maintenance of events, you'll need to do the following:
 
 /* EVENT LISTS  */
 const fall18 = [
-    "8/18: Student Involvement Fair",
-    "8/27: General Meeting",
-    "8/29: Welcome Back Party",
-    "9/10: Git Boot Camp",
-	"9/17: Mic on Mic",
+	"Fall 2018",
+    "8/18: Student Involvement Fair - Stephen Sladek, Michael Ranciglio and Emma Knight",
+    "8/27: General Meeting - Stephen Sladek",
+    "8/29: Welcome Back Party - Stephen Sladek and Emma Knight",
+    "9/10: Git Boot Camp - Michael Ranciglio",
+	"9/17: Mic on Mic - Michael Ranciglio",
     "9/24: Professional Development Day",
-	"10/1: Vue.js",
+	"10/1: Vue.js - Ethan Reker",
 	"10/15: Intro to Sys Admin",
 	"10/20: HackMO",
 	"10/29: TBA",
+	"11/10-11: MegaMinerAI 22",
 	"11/12: TBA",
-	"11/26: TBA",
-	"11/10-11: MegaMinerAI 22"
+	"11/26: TBA"
 ];
 
 const summer18 = [
+	"Summer 2018",
     "6/8: ACM-SEMO Discord Bot goes live - Stephen Sladek"
 ];
 
-const spring18ai = [
-    "2/13: Bresenham's Line Algorithm for Line of Sight - Aaron Gunther",
-    "2/20: Linux - Michael Ranciglio"
-];
-
 const spring18 = [
-    "1/24: ACM-SEMO is launched on Moodle by Dr. Suhair Amer",
+	"Spring 2018",
+    "1/24: ACM-SEMO is launched on Moodle - Dr. Suhair Amer",
     "1/29: Git Boot Camp - Michael Ranciglio",
     "2/5: Unit Testing - Andrew Smith",
     "2/12: Programming in D - Ethan Reker",
@@ -51,6 +49,7 @@ const spring18 = [
 ];
 
 const fall17 = [
+	"Fall 2017",
     "8/28: Professional Development Day - Dan Presson",
     "9/11: Git Boot Camp - Michael Ranciglio and Andrew Smith",
     "9/18: Welcome to Linux - Michael Ranciglio",
@@ -71,11 +70,13 @@ const fall17 = [
 ];
 
 const summer17 = [
+	"Summer 2017",
     "6/6: ACM-SEMO gets its own website, developed by Stephen Sladek",
     "Photos used are by courtesy of Tatianna Reinbolt and Derek Mandl"
 ];
 
 const spring17 = [
+	"Spring 2017",
     "2/13: What is ACM? - Stephen Sladek",
     "2/13: Getting Started with Git - Michael Ranciglio",
     "2/17: ACM-SEMO is launched on Discord by Michael Ranciglio",
@@ -92,6 +93,7 @@ const spring17 = [
 ];
 
 const fall16 = [
+	"Fall 2016",
     "8/30: ACM-SEMO logo is designed by Tatianna Reinbolt",
     "8/30: ACM-SEMO is launched on Facebook by Hannah Reinbolt",
     "9/9: What is ACM? - Stephen Sladek",
@@ -105,59 +107,56 @@ const fall16 = [
     "12/5: Steganography: Hiding in Plain SIght - Stephen Sladek"
 ];
 
-const fall15 = [ "10/28: Acm Recruitment Presentation - Cameron Hutchison" ];
+const fall15 = [ 
+	"Fall 2015",
+	"10/28: Acm Recruitment Presentation - Cameron Hutchison"
+];
 
 const spring15 = [
+	"Spring 2015",
     "2/18: ACM Recruitment Presentation - Zachary Higgins",
     "5/5: Towers of Hanoi & Eight Queens - Zachary Higgins"
 ];
 
-const fall14 = [ "12/9: Founding of ACM-SEMO" ];
+const fall14 = [ 
+	"Fall 2014",
+	"12/9: Founding of ACM-SEMO"
+];
 
-const current = fall18; //MODIFY THIS TO MATCH CURRENT SEMESTER FOR ACM
-const currentAI = spring18ai; //MODIFY THIS TO MATCH CURRENT SEMESTER FOR SIGAI
+var current = fall18; //MODIFY THIS TO MATCH CURRENT SEMESTER FOR ACM
 
-/*
- * Called upon within loadEvent()
- * The ul tag will have an id of event0, event1, etc.
- * This will return the list of events to populate that ul with
-*/
-function getSemester(id){
-    switch(id){
-        case "event0":
-            return fall14;
-        case "event1":
-            return spring15;
-        case "event2":
-            return fall15;
-        case "event3":
-            return fall16;
-        case "event4":
-            return spring17;
-        case "event5":
-            return summer17;
-        case "event6":
-            return fall17;
-        case "event7":
-            return spring18;
-        case "event8":
-            return summer18;
-        case "event9":
-            return fall18;
-        default:
-            return "-";
-            break;
-    }
-}
+var eventList = [
+	fall18,
+	summer18,
+	spring18,
+	fall17,
+	summer17,
+	spring17,
+	fall16,
+	fall15,
+	spring15,
+	fall14
+];
 
-/* Loads the events into the ul tags on events.html */
-function loadEvent(id){
-	var event = document.getElementById(id);
-	var info = getSemester(id);
-	for(let i = 0; i < info.length; i++){
-		var li = document.createElement("li");
-		li.appendChild(document.createTextNode(info[i]));
-		event.appendChild(li);
+// Loads the events into the div eventList on events.html
+function loadEvents(){
+	var eventDiv = document.getElementById('eventContainer');
+	var section, ul, li;
+	var info;
+	for(let i = 0; i < eventList.length; i++){
+		info = eventList[i]; //current semester of events
+		section = document.createElement("section");
+		ul = document.createElement("ul");
+		for(let j = 0; j < info.length; j++){
+			li = document.createElement("li");
+			li.appendChild(document.createTextNode(info[j]));
+			ul.appendChild(li);
+		}
+		ul.className += "eventList";
+		section.className += "events lucida";
+		section.appendChild(ul);
+		eventDiv.appendChild(section);
+		
 	}
 }
 
@@ -176,26 +175,6 @@ function loadCurrent(){
 		if(event[0] >= month) {
 			li = document.createElement("li");
 			li.appendChild(document.createTextNode(current[i]));
-			eventList.appendChild(li);
-		}
-	}
-}
-
-/*
- * Loads current events for SIGAI.
- * Is called on in index.html.
-*/
-function loadAICurrent(){
-	var eventList = document.getElementById("currentAIEvents");
-	var d = new Date();
-	var month = d.getMonth()+1;
-	var day = d.getDate();
-	var li;
-	for(let i = 0; i < currentAI.length; i++){
-		var event = (currentAI[i]).split("/", 1);
-		if(event[0] >= month) {
-			li = document.createElement("li");
-			li.appendChild(document.createTextNode(currentAI[i]));
 			eventList.appendChild(li);
 		}
 	}

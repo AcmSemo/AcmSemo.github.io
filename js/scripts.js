@@ -27,8 +27,8 @@ function loadHead(){
 
 const names = [
 "Advisor: Dr. Suhair Amer",
-"Chair: Stephen Sladek",
-"Vice Chair: Kearsten Collins",
+"Chair: Kearsten Collins",
+"Vice Chair: Emma Knight",
 "Secretary: Nicholas Hoang",
 "Treasurer: Derek Mandl"
 ];
