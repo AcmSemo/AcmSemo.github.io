@@ -155,7 +155,7 @@
 			{
 				"day":24,
 				"event":"Professional Development Day",
-				"host":"Brooksource",
+				"host":"BrookSource",
 				"org":"acm"
 			}
 		],
@@ -165,15 +165,15 @@
 				"event":"Vue.js",
 				"host":"Ethan Reker",
 				"org":"acm"
-			},
-			{
-				"day":20,
-				"event":"HackMO",
-				"host":"CS Dept",
-				"org":"acm"
 			}
 		],
 		"11":[
+			{
+				"day":3,
+				"event":"Student Showcase",
+				"host":"none",
+				"org":"acm"
+			},
 			{
 				"day":10,
 				"event":"MegaMinerAI 22",
