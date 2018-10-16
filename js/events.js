@@ -1,12 +1,12 @@
 /*
 For regular maintenance of events, you'll need to do the following:
-1) add a list of events for the semester following the same scheme as below.
-2) modify getSemester(id) to return the list you created for the corresponding id
-3) add a ul in events.html with the next id in line (so if we're on event29 add event30)
-4) modify the current and currentAI variables to be set to the current semester lists.
+1) add an array of events for the semester following the same scheme as below.
+2) add the newly made list of events to the eventList array
+3) modify the current variable to be set to the current semester list.
  */
 
 /* EVENT LISTS  */
+
 const fall18 = [
 	"Fall 2018",
     "8/18: Student Involvement Fair - Stephen Sladek, Michael Ranciglio and Emma Knight",
@@ -15,8 +15,9 @@ const fall18 = [
     "9/10: Git Boot Camp - Michael Ranciglio",
 	"9/17: Mic on Mic - Michael Ranciglio",
     "9/24: Professional Development Day - BrookSource",
-	"10/1: Vue.js - Ethan Reker",
-	"10/15: TBA",
+	"10/1: General Meeting - Kearsten Collins",
+	"10/15: SysAdmin Essentials - Marc Maton",
+	"10/19: Hololens Debut",
 	"10/29: TBA",
 	"11/03: Student Showcase",
 	"11/10-11: MegaMinerAI 22",
@@ -123,8 +124,10 @@ const fall14 = [
 	"12/9: Founding of ACM-SEMO"
 ];
 
-var current = fall18; //MODIFY THIS TO MATCH CURRENT SEMESTER FOR ACM
+// MODIFY THIS TO MATCH CURRENT SEMESTER
+var current = fall18;
 
+// ADD THE NEW SEMESTER TO THE TOP OF THIS LIST
 var eventList = [
 	fall18,
 	summer18,

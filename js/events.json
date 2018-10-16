@@ -162,9 +162,21 @@
 		"10":[
 			{
 				"day":1,
-				"event":"Vue.js",
-				"host":"Ethan Reker",
+				"event":"General Meeting",
+				"host":"Kearsten Collins",
 				"org":"acm"
+			},
+			{
+				"day":15,
+				"event":"SysAdmin Essentials",
+				"host":"Marc Maton",
+				"org":"acm"
+			},
+			{
+				"day":19,
+				"event":"Hololens Debut",
+				"host":"none",
+				"cs dept"
 			}
 		],
 		"11":[
