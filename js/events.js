@@ -17,10 +17,9 @@ const fall18 = [
     "9/24: Professional Development Day - BrookSource",
 	"10/1: General Meeting - Kearsten Collins",
 	"10/15: SysAdmin Essentials - Marc Maton",
-	"10/19: Hololens Debut",
-	"10/29: TBA",
+	"10/29: MegaMinerAI Preparation",
 	"11/03: Student Showcase",
-	"11/10-11: MegaMinerAI 22",
+	"11/10 - 11: MegaMinerAI 22",
 	"11/12: TBA",
 	"11/26: TBA"
 ];
@@ -159,7 +158,6 @@ function loadEvents(){
 		section.className += "events lucida";
 		section.appendChild(ul);
 		eventDiv.appendChild(section);
-		
 	}
 }
 

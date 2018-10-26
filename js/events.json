@@ -173,10 +173,16 @@
 				"org":"acm"
 			},
 			{
-				"day":19,
-				"event":"Hololens Debut",
+				"day":26,
+				"event":"Hololens Demo",
+				"host":"Dr. Vijay Anand",
+				"org":"sigai"
+			},
+			{
+				"day":29,
+				"event":"MegaMinerAI Preparation",
 				"host":"none",
-				"cs dept"
+				"org":"acm"
 			}
 		],
 		"11":[
