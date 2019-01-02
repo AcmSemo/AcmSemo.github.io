@@ -7,6 +7,10 @@ For regular maintenance of events, you'll need to do the following:
 
 /* EVENT LISTS  */
 
+const spring19 = [
+	"Spring 2019"
+];
+
 const fall18 = [
 	"Fall 2018",
     "8/18: Student Involvement Fair - Stephen Sladek, Michael Ranciglio and Emma Knight",
@@ -19,9 +23,7 @@ const fall18 = [
 	"10/15: SysAdmin Essentials - Marc Maton",
 	"10/29: MegaMinerAI Preparation",
 	"11/03: Student Showcase",
-	"11/10 - 11: MegaMinerAI 22",
-	"11/12: TBA",
-	"11/26: TBA"
+	"11/10 - 11: MegaMinerAI 22"
 ];
 
 const summer18 = [
@@ -124,19 +126,15 @@ const fall14 = [
 ];
 
 // MODIFY THIS TO MATCH CURRENT SEMESTER
-var current = fall18;
+var current = spring19;
 
 // ADD THE NEW SEMESTER TO THE TOP OF THIS LIST
 var eventList = [
-	fall18,
-	summer18,
-	spring18,
-	fall17,
-	summer17,
-	spring17,
+	spring19,
+	fall18,summer18,spring18,
+	fall17,summer17,spring17,
 	fall16,
-	fall15,
-	spring15,
+	fall15,spring15,
 	fall14
 ];
 

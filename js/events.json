@@ -1,5 +1,17 @@
 /* Use find and replace for /r/n and /t to minimize size. Save minimized version to events-min.json. */
 {
+	"2019" : {
+		"1":[
+		
+		],
+		"2":[],
+		"3":[],
+		"4":[],
+		"8":[],
+		"9":[],
+		"10":[],
+		"11":[]
+	},
 	"2018" : {
 		"1":[
 				{
@@ -189,7 +201,7 @@
 			{
 				"day":3,
 				"event":"Student Showcase",
-				"host":"none",
+				"host":"Kearsten Collins",
 				"org":"acm"
 			},
 			{
