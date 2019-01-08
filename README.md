@@ -2,9 +2,9 @@
 This is the website for the Association for Computing Machinery Student Chapter at Southeast Missouri State University.
 
 It provides the following:
-* A description for each respective ACM branch of SEMO
+* A description for each respective ACM branch at SEMO
 * Listings of current and past events
 * Links to external affiliated sites such as SELink and Facebook
 * Downloadable presentation slides
-* Registration for HackMO event
 * ACM Email Signature Generator
+* Contact Information
