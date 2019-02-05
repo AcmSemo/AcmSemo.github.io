@@ -8,17 +8,19 @@ For regular maintenance of events, you'll need to do the following:
 /* EVENT LISTS  */
 
 const spring19 = [
-	"Spring 2019"
+	"Spring 2019",
+	"1/28: General Meeting - Kearsten Collins",
+	"2/11: ACM Meeting"
 ];
 
 const fall18 = [
 	"Fall 2018",
-    "8/18: Student Involvement Fair - Stephen Sladek, Michael Ranciglio and Emma Knight",
-    "8/27: General Meeting - Stephen Sladek",
-    "8/29: Welcome Back Party - Stephen Sladek and Emma Knight",
-    "9/10: Git Boot Camp - Michael Ranciglio",
+	"8/18: Student Involvement Fair - Stephen Sladek, Michael Ranciglio and Emma Knight",
+	"8/27: General Meeting - Stephen Sladek",
+	"8/29: Welcome Back Party - Stephen Sladek and Emma Knight",
+	"9/10: Git Boot Camp - Michael Ranciglio",
 	"9/17: Mic on Mic - Michael Ranciglio",
-    "9/24: Professional Development Day - BrookSource",
+	"9/24: Professional Development Day - BrookSource",
 	"10/1: General Meeting - Kearsten Collins",
 	"10/15: SysAdmin Essentials - Marc Maton",
 	"10/29: MegaMinerAI Preparation",
@@ -28,7 +30,7 @@ const fall18 = [
 
 const summer18 = [
 	"Summer 2018",
-    "6/8: ACM-SEMO Discord Bot goes live - Stephen Sladek"
+	"6/8: ACM-SEMO Discord Bot goes live - Stephen Sladek"
 ];
 
 const spring18 = [
