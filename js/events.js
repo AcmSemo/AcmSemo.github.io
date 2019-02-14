@@ -10,7 +10,8 @@ For regular maintenance of events, you'll need to do the following:
 const spring19 = [
 	"Spring 2019",
 	"1/28: General Meeting - Kearsten Collins",
-	"2/11: ACM Meeting"
+	"2/11: General Meeting - Emma Knight",
+	"2/18: ACM Meeting"
 ];
 
 const fall18 = [
