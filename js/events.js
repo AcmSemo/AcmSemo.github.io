@@ -11,7 +11,7 @@ const spring19 = [
 	"Spring 2019",
 	"1/28: General Meeting - Kearsten Collins",
 	"2/11: General Meeting - Emma Knight",
-	"2/18: ACM Meeting"
+	"2/25: Movie Night"
 ];
 
 const fall18 = [
